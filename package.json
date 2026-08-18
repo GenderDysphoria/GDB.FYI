@@ -75,6 +75,7 @@
     "concurrent-transform": "^1.0.0",
     "cssnano": "^7.0.6",
     "date-fns": "^4.3.0",
+    "doiuse": "^6.0.6",
     "enhanced-resolve": "^5.22.0",
     "env-schema": "^5.2.1",
     "error-stack-parser": "^2.1.4",
