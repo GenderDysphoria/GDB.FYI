@@ -22,7 +22,7 @@
     font-family: cursive;
     font-weight: 700;
     display: block;
-    padding-left: 10px;
+    padding-inline-start: 10px;
     content: "\201C";
     font-size: 50px;
     position: absolute;
@@ -34,6 +34,6 @@
   }
 
   p:last-child {
-    margin-bottom: 0;
+    margin-block-end: 0;
   }
 }

@@ -16,7 +16,7 @@
   border: 1px solid var(--borderColor);
   border-radius: .35em;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  margin-bottom: 1em;
+  margin-block-end: 1em;
   background-color: var(--surface-1);
   overflow-x: hidden;
   overflow-y: auto;
@@ -47,7 +47,7 @@
   }
 
   .tweet + .tweet {
-    border-top: 1px solid var(--borderColor);
+    border-block-start: 1px solid var(--borderColor);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
@@ -69,7 +69,7 @@
     grid-column-gap: 10px;
     grid-row-gap: 0px;
     color: var(--textDark);
-    margin-bottom: 1em;
+    margin-block-end: 1em;
     line-height: 1;
 
     &:hover {
@@ -103,7 +103,7 @@
         width: 16px;
         display: inline-block;
         vertical-align: bottom;
-        margin-left: 4px;
+        margin-inline-start: 4px;
         background-image: url('/tweets/verified.svg');
         background-position: center center;
         background-size: contain;
@@ -142,8 +142,8 @@
 
   .tweet-text, .tweet-quoted-text {
     line-height: 1.5em;
-    p { margin-bottom: 0.5em; }
-    p:last-child { margin-bottom: 0; }
+    p { margin-block-end: 0.5em; }
+    p:last-child { margin-block-end: 0; }
     a { color: var(--textHover); }
   }
 
@@ -155,8 +155,8 @@
     display: inline-block;
     color: var(--textDark);
     font-size: 0.95em;
-    margin-top: 0.4em;
-    margin-bottom: 0.75em;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.75em;
     background: rgba(var(--gray-500), 0.1);
 
     color-adjust: exact;
@@ -182,7 +182,7 @@
     }
 
     p:last-child {
-      margin-bottom: 0;
+      margin-block-end: 0;
     }
 
     &.missing {
@@ -195,7 +195,7 @@
   }
 
   .tweet-entities {
-    margin-top: 10px;
+    margin-block-start: 10px;
 
     border-radius: 14px;
     overflow: hidden;
@@ -204,7 +204,7 @@
     box-shadow: 0 0 3px rgba(#000, 0.3);
 
     .tweet-entities-inner {
-      padding-bottom: 56.25%;
+      padding-block-end: 56.25%;
       position: relative;
 
       > div {
@@ -237,7 +237,7 @@
 
     &.entity-count-1 {
       .tweet-entities-inner {
-        padding-bottom: 0;
+        padding-block-end: 0;
         > div {position: relative;}
       }
 
@@ -257,7 +257,7 @@
       }
 
       .tweet-entities-inner {
-        padding-bottom: 45%;
+        padding-block-end: 45%;
       }
     }
 
@@ -267,7 +267,7 @@
       }
 
       .tweet-entities-inner {
-        padding-bottom: 30%;
+        padding-block-end: 30%;
       }
     }
   }
@@ -293,7 +293,7 @@
     align-items: flex-end;
     color: var(--textLight);
     font-size: 1em;
-    margin-top: 10px;
+    margin-block-start: 10px;
 
     a {
       text-decoration: none;
@@ -339,7 +339,7 @@
       }
 
       .tweet-text p:first-child {
-        padding-right: 30px;
+        padding-inline-end: 30px;
       }
     }
   }
@@ -350,12 +350,12 @@
     &.borderless { border: none; padding: 0; }
 
     .tweet {
-      border-top: none;
+      border-block-start: none;
       padding: 0;
     }
 
     .tweet + .tweet {
-      padding-top: 0.5em;
+      padding-block-start: 0.5em;
     }
 
     .tweet:not(:first-child):not(:last-child) .tweet-link {
@@ -371,15 +371,15 @@
 
   &.collapse:not(.grid-row) {
     .tweet {
-      padding-bottom: 0.5em;
+      padding-block-end: 0.5em;
     }
 
     .tweet + .tweet {
-      padding-top: 0.5em;
+      padding-block-start: 0.5em;
     }
 
     .tweet:last-child {
-      padding-bottom: 20px;
+      padding-block-end: 20px;
     }
   }
 
@@ -389,8 +389,8 @@
 
     /* @include dark-mode {
       // Box shadow hackery
-      margin-left: -1em;
-      margin-right: -1em;
+      margin-inline-start: -1em;
+      margin-inline-end: -1em;
       padding: 1em;
     } */
 

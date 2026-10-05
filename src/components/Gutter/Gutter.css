@@ -24,7 +24,7 @@
   @media screen and ($breakpoint-sm < width < $breakpoint-md) {
     float: right;
     width: var(--gutter-width);
-    margin-left: 1em;
+    margin-inline-start: 1em;
     zoom: 0.9;
   }
 
@@ -35,7 +35,7 @@
     &:not(.print-inline) {
       float: right;
       width: 25vw;
-      margin-left: 1em;
+      margin-inline-start: 1em;
     }
   }
 
@@ -64,6 +64,6 @@
 
   > a > img:not(.card-img-top), > img {
     max-width: 100%;
-    margin-bottom: 5px;
+    margin-block-end: 5px;
   }
 }

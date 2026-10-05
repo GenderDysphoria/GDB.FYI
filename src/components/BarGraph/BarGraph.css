@@ -44,7 +44,7 @@
     gap: 0;
 
     &>div {
-      border-bottom: 3px solid light-dark(var(--trans-blue-light), var(--trans-blue-dark));
+      border-block-end: 3px solid light-dark(var(--trans-blue-light), var(--trans-blue-dark));
 
       &:last-child {
         border-width: 0;

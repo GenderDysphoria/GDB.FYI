@@ -1,7 +1,7 @@
 
 .ui-disclaimer {
   background-color: light-dark(var(--grey-000), var(--grey-850));
-  border-bottom: 1px solid light-dark(var(--alpha-black-200), var(--alpha-white-200));
+  border-block-end: 1px solid light-dark(var(--alpha-black-200), var(--alpha-white-200));
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-light);
 

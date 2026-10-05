@@ -3,7 +3,7 @@
   overflow: hidden;
   --ui-paper--shadow: 0 1px 3px rgb(from var(--trans-blue-dark) r g b / 50%);
   background-color: var(--surface-2);
-  margin-bottom: var(--spacing);
+  margin-block-end: var(--spacing);
 
   @media print {
     --ui-paper--shadow: none;
@@ -16,7 +16,7 @@
   font-size: var(--font-size-sm);
 
   p:last-child {
-    margin-bottom: 0;
+    margin-block-end: 0;
   }
 
   ul:first-child, ol:first-child {
@@ -69,21 +69,21 @@
   
 
   p:last-child {
-    margin-bottom: 0;
+    margin-block-end: 0;
   }
 
   &>.ui-card-header-avatar {
     display: flex;
     flex: 0 0 auto;
-    margin-right: var(--spacing-2);
+    margin-inline-end: var(--spacing-2);
   }
 
   &>.ui-card-header-action {
     flex: 0 0 auto;
     align-self: flex-start;
-    margin-top: calc(val(--spacing) * -0.5);
-    margin-right: calc(val(--spacing) * -1);
-    margin-bottom: calc(val(--spacing) * 0.5);
+    margin-block-start: calc(val(--spacing) * -0.5);
+    margin-inline-end: calc(val(--spacing) * -1);
+    margin-block-end: calc(val(--spacing) * 0.5);
   }
 
   &>.ui-card-header-content {
@@ -91,7 +91,7 @@
   }
 
   &:has(+ .ui-card-content) {
-    padding-bottom: 0;
+    padding-block-end: 0;
   }
 
   &:has(+ .ui-card-media) {

@@ -29,7 +29,7 @@
     color: inherit;
   }
 
-  margin-bottom: var(--spacing);
+  margin-block-end: var(--spacing);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-light);
   & p:last-child {

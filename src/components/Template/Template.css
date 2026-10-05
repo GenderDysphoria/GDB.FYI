@@ -78,7 +78,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 var(--spacing-2);
-    padding-right: 0;
+    padding-inline-end: 0;
 
     @media screen and (width >= $breakpoint-xl) {
       width: var(--breakpoint-xl);
@@ -217,8 +217,8 @@
   }
 
   @media screen and (width > $breakpoint-md) {
-    margin-right: var(--gutter-width);
-    .ui-disclaimer { margin-right: calc((var(--gutter-width) * -1) - var(--spacing-2)); }
+    margin-inline-end: var(--gutter-width);
+    .ui-disclaimer { margin-inline-end: calc((var(--gutter-width) * -1) - var(--spacing-2)); }
   }
 }
 
@@ -226,7 +226,7 @@
   display: none;
   grid-area: gutterLeft;
   background: var(--surface-5);
-  border-right: 1px solid var(--alpha-black-200);
+  border-inline-end: 1px solid var(--alpha-black-200);
   box-shadow: inset -6px 6px 11px -9px var(--alpha-black-500);
 }
 
@@ -234,7 +234,7 @@
   display: none;
   grid-area: gutterRight;
   background: var(--surface-4);
-  border-left: 1px solid var(--alpha-black-200);
+  border-inline-start: 1px solid var(--alpha-black-200);
   box-shadow: inset 6px 6px 11px -9px var(--alpha-black-500);
 }
 
@@ -278,19 +278,19 @@
     > a {
       display: block;
       padding: var(--spacing) var(--spacing-2);
-      padding-left: calc(var(--spacing-2) + 2ch);
-      padding-right: var(--spacing-half);
+      padding-inline-start: calc(var(--spacing-2) + 2ch);
+      padding-inline-end: var(--spacing-half);
 
       background-color: var(--ui-template-nav-bg-color);
-      border-top: 1px solid var(--ui-template-nav-border-color);
+      border-block-start: 1px solid var(--ui-template-nav-border-color);
     }
 
     ol &:last-of-type > a {
-      border-bottom: 1px solid var(--ui-template-nav-border-color);
+      border-block-end: 1px solid var(--ui-template-nav-border-color);
     }
 
     svg {
-      margin-left: 1ch;
+      margin-inline-start: 1ch;
       vertical-align: text-top;
       font-size: 14px;
     }
@@ -298,22 +298,22 @@
     &:hover:not(.active) {
       & > a {
         background-color: var(--ui-template-nav-hover-bg-color);
-        border-top: 1px solid var(--ui-template-nav-hover-border-color);
+        border-block-start: 1px solid var(--ui-template-nav-hover-border-color);
       }
 
       & + li:not(.active) > a {
-        border-top: 1px solid var(--ui-template-nav-hover-border-color);
+        border-block-start: 1px solid var(--ui-template-nav-hover-border-color);
       }
     }
 
     &.active {
       & > a {
         background-color: var(--ui-template-nav-active-bg-color);
-        border-top: 1px solid var(--ui-template-nav-active-border-color);
+        border-block-start: 1px solid var(--ui-template-nav-active-border-color);
       }
 
       & + li > a {
-        border-top: 1px solid var(--ui-template-nav-active-border-color);
+        border-block-start: 1px solid var(--ui-template-nav-active-border-color);
       }
     }
   }
@@ -328,13 +328,13 @@
 
   &::after {
     display: inline-block;
-    margin-left: .255em;
+    margin-inline-start: .255em;
     vertical-align: .255em;
     content: "";
-    border-top: .3em solid;
-    border-right: .3em solid transparent;
-    border-bottom: 0;
-    border-left: .3em solid transparent;
+    border-block-start: .3em solid;
+    border-inline-end: .3em solid transparent;
+    border-block-end: 0;
+    border-inline-start: .3em solid transparent;
   }
 }
 
@@ -358,20 +358,20 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  /* margin-top: 3px; */
+  /* margin-block-start: 3px; */
 
   & > li {
     &> a{
       display: block;
       padding: var(--spacing) var(--spacing-2);
-      padding-right: var(--spacing-half);
+      padding-inline-end: var(--spacing-half);
 
       background-color: var(--ui-template-nav-bg-color);
-      border-top: 1px solid var(--ui-template-nav-border-color);
+      border-block-start: 1px solid var(--ui-template-nav-border-color);
     }
 
     &:first-of-type > a {
-      border-top: none;
+      border-block-start: none;
       border-top-left-radius: var(--paper-shape);
       border-top-right-radius: var(--paper-shape);
     }
