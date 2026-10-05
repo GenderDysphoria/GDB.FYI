@@ -1,6 +1,6 @@
-import { headingComponents } from '#src/components/Text/Text';
-
 import Introduction from './index.mdx';
+
+import { headingComponents } from '#src/components/Headers';
 
 const pages = (await Promise.all([
   import('./what-is-gender.mdx'),

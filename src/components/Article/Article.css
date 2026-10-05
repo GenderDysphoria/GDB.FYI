@@ -10,48 +10,6 @@
 
   }
 
-  h1, h2, h3, h4, h5 {
-    clear: left;
-    display: flex;
-
-    a {
-      color: inherit;
-      overflow: hidden;
-      text-decoration: inherit;
-    }
-
-    .header-link {
-      flex: 1;
-      font-size: 0.75em;
-      text-decoration: none;
-      align-self: center;
-      text-align: right;
-      opacity: 0.15;
-
-      &:hover {
-        opacity: 1;
-      }
-
-      img {
-        height: 1em;
-      }
-    }
-
-    + {
-      h1, h2, h3, h4, h5 {
-        .header-link {
-          display: none;
-        }
-      }
-    }
-
-    &:first-child {
-      .header-link {
-        display: none;
-      }
-    }
-  }
-
   @media print {
     h1 {
       page-break-before: always;
@@ -142,59 +100,6 @@
 
   }
 
-  h1, h2, h3, h4, h5 {
-    clear: left;
-    display: flex;
-    margin-block-start: 0;
-    margin-block-end: .5rem;
-
-    a { text-decoration: inherit; }
-
-    .header-link {
-      flex: 1;
-      font-size: 0.75em;
-      text-decoration: none;
-      align-self: center;
-      text-align: right;
-      opacity: 0.15;
-
-      &:hover {
-        opacity: 1;
-      }
-
-      img {
-        height: 1em;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        /* Convert the black svg icon to the $primary color at runtime using CSS filters
-           https://stackoverflow.com/a/43960991 */
-        filter: invert(34%) sepia(87%) saturate(2698%) hue-rotate(313deg) brightness(108%) contrast(98%);
-      }
-    }
-
-    + {
-      h1, h2, h3, h4, h5 {
-        .header-link {
-          display: none;
-        }
-      }
-    }
-
-    &:first-child {
-      .header-link {
-        display: none;
-      }
-    }
-  }
-
-  h5 {
-    font-weight: 600;
-    font-family: var(--font-family-primary);
-    margin-block-end: 0.2rem;
-    font-size: 1.05em;
-  }
-
   li p {
     margin-block-end: 0;
     margin-block-start: 0.5em;
@@ -225,7 +130,7 @@
 
 .toc {
   @media (min-width: 500px) {
-    h1, h2, h3, h4 {
+    .ui-header {
       justify-content: center;
     }
   }

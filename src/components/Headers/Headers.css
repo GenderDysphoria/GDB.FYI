@@ -1,0 +1,49 @@
+
+.ui-header {
+  clear: left;
+  display: flex;
+  margin-block-start: 0;
+  margin-block-end: .5rem;
+
+  a { text-decoration: inherit; }
+
+  .header-text {
+    flex: 1 0 calc(100% - 3ch);
+  }
+  .header-link {
+    flex: 1;
+    font-size: 0.75em;
+    text-decoration: none;
+    align-self: center;
+    text-align: right;
+    opacity: 0.15;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    img {
+      height: 1em;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      /* Convert the black svg icon to the $primary color at runtime using CSS filters
+          https://stackoverflow.com/a/43960991 */
+      filter: invert(34%) sepia(87%) saturate(2698%) hue-rotate(313deg) brightness(108%) contrast(98%);
+    }
+  }
+
+  + {
+    h1, h2, h3, h4, h5 {
+      .header-link {
+        display: none;
+      }
+    }
+  }
+
+  &:first-child {
+    .header-link {
+      display: none;
+    }
+  }
+}

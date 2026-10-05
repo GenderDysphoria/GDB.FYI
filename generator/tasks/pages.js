@@ -11,7 +11,8 @@ import BUILD_HASH from '#gen/build-hash';
 import { ROOT_DIR, IS_PROD, resolve } from '#gen/config';
 import HtmlPage from '#src/components/HtmlPage';
 import Template from '#src/components/Template/Template';
-import { headingComponents } from '#src/components/Text/Text';
+
+import { headingComponents } from '#src/components/Headers';
 
 const INDEX_GLOB = 'public/*/_index.js';
 const PAGE_GLOB = [ 'public/**/*.{mdx,js}' ];
