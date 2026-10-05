@@ -18,6 +18,10 @@
   p:last-child {
     margin-bottom: 0;
   }
+
+  ul:first-child, ol:first-child {
+    margin-block-start: 0;
+  }
 }
 
 .ui-card-actions {
@@ -59,7 +63,7 @@
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-bold);
   background-image: linear-gradient(180deg, var(--surface-4) 10%, var(--surface-2) 99%);
-  box-shadow: 0px 1px white inset;
+  box-shadow: 0px 1px light-dark(white, var(--surface-6)) inset;
   border-top-left-radius: var(--paper-shape);
   border-top-right-radius: var(--paper-shape);
   

@@ -64,6 +64,7 @@
     --font-size-5xl: 4rem;
   }
 
+  --text-color-contrast: rgba(0, 0, 0, 0.87);
   --text-color-primary: light-dark(rgba(0, 0, 0, 0.87), rgba(245, 245, 245, 1));
   --text-color-secondary: light-dark(rgba(0, 0, 0, 0.6), rgba(245, 245, 245, 0.5));
   --text-color-disabled: light-dark(rgba(0, 0, 0, 0.38), rgba(245, 245, 245, 0.5));
@@ -73,6 +74,8 @@
   --text-color-warning: var(--warning-main);
   --text-color-danger: var(--danger-main);
   --text-color-muted: var(--grey-600);
+  --text-color-anchor: light-dark(#fc2c90, #fd4da1);
+  --text-color-anchor-hover: light-dark(#fd4da1, #fd6fb3);
 }
 
 body {
