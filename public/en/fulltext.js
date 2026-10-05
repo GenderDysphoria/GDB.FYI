@@ -23,6 +23,7 @@ const pages = (await Promise.all([
   import('./hormones.mdx'),
   import('./second-puberty-masc.mdx'),
   import('./second-puberty-fem.mdx'),
+  import('./regrets.mdx'),
   import('./conclusion.mdx'),
 ])).map(({ default: Page }) => <Page components={headingComponents} />);
 

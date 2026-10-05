@@ -24,6 +24,7 @@ export default {
     '/en/hormones',
     '/en/second-puberty-masc',
     '/en/second-puberty-fem',
+    '/en/regrets',
     '/en/conclusion',
   ],
   pdf: {

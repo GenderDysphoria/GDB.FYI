@@ -1,0 +1,54 @@
+.ui-bargraph {
+  display: grid;
+  grid-template-columns: minmax(30ch, min-content) auto;
+  gap: 3px 0;
+
+  &>strong {
+    display: flex;
+    align-items: center;
+    padding-inline: 5px;
+    background-color: light-dark(var(--trans-blue-lightest), var(--trans-blue-darkest));
+  }
+
+  &>div {
+    display: flex;
+    align-items: center;
+    background-color: light-dark(var(--trans-blue-lightest), var(--trans-blue-darkest));
+
+    b {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      background: var(--trans-blue-main);
+      color: var(--text-color-contrast);
+      height: 2em;
+      margin-block: 4px;
+      padding-inline: 5px;
+      font-weight: bold;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      font-weight: bold;
+    }
+
+    b+span {
+      margin-inline-start: 5px;
+    }
+  }
+
+  @media screen and (width < $breakpoint-md) {
+    grid-template-columns: 1fr;
+    gap: 0;
+
+    &>div {
+      border-bottom: 3px solid light-dark(var(--trans-blue-light), var(--trans-blue-dark));
+
+      &:last-child {
+        border-width: 0;
+      }
+    }
+  }
+}
