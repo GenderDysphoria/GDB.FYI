@@ -15,12 +15,14 @@ export default async function pdfs () {
   const page = await browser.newPage();
 
   for (const lang of Object.values(manifest.languages)) {
-    const distPath = resolve('public', lang.lang, 'gdb.pdf');
+    const pubPath = resolve('public', lang.lang, 'gdb.pdf');
+    const distPath = resolve('dist', lang.lang, 'gdb.pdf');
 
     await page.goto(`http://127.0.0.1:8080/${lang.lang}/fulltext`);
     await page.emulateMediaType('print');
-    await page.pdf({ path: distPath, format: 'A4' });
-    log(`    Wrote ${path.relative(ROOT_DIR, distPath)}`);
+    await page.pdf({ path: pubPath, format: 'A4' });
+    await fs.copy(pubPath, distPath);
+    log(`    Wrote ${path.relative(ROOT_DIR, pubPath)} and ${path.relative(ROOT_DIR, distPath)}`);
   }
 
   await browser.close();

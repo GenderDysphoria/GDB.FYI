@@ -12,7 +12,7 @@
     "start": "./gen watch",
     "test": "./node_modules/.bin/fest --test-reporter=spec",
     "build": "./gen build",
-    "deploy": "NODE_ENV=production ./gen build && ./gen publish",
+    "deploy": "NODE_ENV=production ./gen publish",
     "lint": "eslint .",
     "lint-fix": "eslint --fix .",
     "hash": "git archive main | md5 > compiled/hash.txt"

@@ -15,6 +15,9 @@ const tasks = {
   deploy: () => publish(),
   cloudfront: () => invalidateCloudfront(),
   publish: [
+    'clean',
+    'build',
+    'pdfs',
     'deploy',
     'cloudfront',
   ],
@@ -29,7 +32,7 @@ const tasks = {
     distPath: `dist/static/${BUILD_HASH}/`,
     minify: process.env.NODE_ENV === 'production',
   }),
-  pdfs: [ 'clean', 'build', () => pdfs() ],
+  pdfs: () => pdfs(),
   build: [
     'clean',
     {
