@@ -28,17 +28,13 @@ export default {
     '/ar/regrets',
     '/ar/conclusion',
   ],
-  pdf: {
-    url: '/en/gdb.pdf',
-    caption: 'Download as PDF',
-  },
   messages: {
     SITE_TITLE: 'مجموعة شاملة عن عدم التوافق بين الجنسين',
     SITE_DESCRIPTION: 'مصدرٌ مخصصٌ لأولئك الذين يتساءلون عن هويتهم الج أو ممن هم بالفعل في رحلة استكشاف هويتهم الاجتماعية أو ببساطة لمن يرغبون في معرفة المزيد عما يعنيه أن يكون المرء عابراً جندريا.',
 
     FOOTER_PATREON: 'يعود الفضل في استمرار هذا الموقع إلى مساهمات المجتمع. إذا وجدت هذا الموقع قيّماً ومفيداً، فيُرجى التفكير في <a>تقديم دعم عبر Patreon</a> أو <b>التبرع من خلال Ko-fi</b>.',
     FOOTER_COPYRIGHT: 'نصوص الموقع، ورمزه البرمجي، والرسومات الأصلية مرخصة بموجب <a>CC BY-NC-SA</a>.',
-    FOOTER_COPYRIGHT2: 'وغيرهم من المساهمين',
+    FOOTER_COPYRIGHT2: 'Twipped Media ومساهمون آخرون',
     FOOTER_PRIVACY_POLICY: 'سياسة الخصوصية',
     FULL_TEXT: 'عرض النص الكامل',
     PDF_DOWNLOAD: 'تنزيل ملف PDF',

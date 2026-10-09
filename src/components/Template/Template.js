@@ -162,7 +162,7 @@ function Footer () {
           <SvgIcon icon="cc-by" />
           <SvgIcon icon="cc-nc" />
           <SvgIcon icon="cc-sa" />
-        </span><br />&copy; {year} Twipped Media <FormattedMessage id="FOOTER_COPYRIGHT2" />
+        </span><br />&copy; {year} <FormattedMessage id="FOOTER_COPYRIGHT2" />
       </p>
       <p class="foot-nav"><a href="/privacy.html"><FormattedMessage id="FOOTER_PRIVACY_POLICY" /></a></p>
     </footer>

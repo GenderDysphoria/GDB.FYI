@@ -37,7 +37,7 @@ export default {
 
     FOOTER_PATREON: 'This site is made possible thanks to contributions from the community. If you have found this site invaluable, please consider <a>making a pledge on patreon</a> or a <b>donation via Ko-fi</b>.',
     FOOTER_COPYRIGHT: 'Site text, website code and original graphics are <a>licensed CC BY-NC-SA.</a>',
-    FOOTER_COPYRIGHT2: 'and Other Contributors',
+    FOOTER_COPYRIGHT2: 'Twipped Media and Other Contributors',
     FOOTER_PRIVACY_POLICY: 'Privacy Policy',
     FULL_TEXT: 'View Full Text',
     PDF_DOWNLOAD: 'Download PDF',
