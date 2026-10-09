@@ -1,9 +1,10 @@
 import { Fragment, RawHtml, Priority } from 'essex';
 
 import { IS_PROD } from '#gen/config';
+import { computeSrc } from '#src/components/Image/images';
 import ScriptAsset from '#src/components/ScriptAsset';
 
-export default function HtmlPage ({
+export default async function HtmlPage ({
   lang = 'en',
   title,
   className,
@@ -12,6 +13,12 @@ export default function HtmlPage ({
   head,
 }) {
   const { BUILD_HASH, metadata, intl } = this;
+  let titlecard;
+  if (metadata.image) {
+    const [ files, promises ] = await computeSrc(metadata.image);
+    titlecard = new URL(files.at(-1).url, canonical).href;
+    await Promise.all(promises);
+  }
   return (
     <Fragment>
       <RawHtml>{'<!DOCTYPE html>'}</RawHtml>
@@ -22,13 +29,30 @@ export default function HtmlPage ({
           <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
           <meta property="og:site_name" content={intl.formatMessage({ id: 'SITE_TITLE', defaultMessage: 'The Gender Dysphoria Bible' })} />
-          {metadata.title && <meta property="og:title" content={metadata.title} />}
-          {metadata.description && <meta property="og:description" content={metadata.description} />}
-          {metadata.image && <meta property="og:image" content={metadata.image} />}
+          {metadata.title && (
+            <>
+              <title>{title}</title>
+              <meta property="og:title" content={metadata.title} />
+              <meta property="twitter:title" content={metadata.title} />
+            </>
+          )}
+          {metadata.description && (
+            <>
+              <meta name="description" content={metadata.description} />
+              <meta property="og:description" content={metadata.description} />
+              <meta property="twitter:description" content={metadata.description} />
+            </>
+          )}
+          {titlecard && (
+            <>
+              <meta property="og:image" content={titlecard} />
+              <meta property="twitter:image" content={titlecard} />
+            </>
+          )}
           <meta property="og:url" content={canonical} />
+          <meta property="twitter:url" content={canonical} />
           <link rel="canonical" href={canonical} />
           <meta name="fediverse:creator" content="twipped@twipped.social" />
-          <title>{title}</title>
 
           {/* <!-- generics --> */}
           <link rel="icon" type="image/x-icon" href="/favicon.ico" />

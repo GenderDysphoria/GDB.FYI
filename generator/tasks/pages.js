@@ -9,10 +9,9 @@ import path from 'node:path';
 
 import BUILD_HASH from '#gen/build-hash';
 import { ROOT_DIR, IS_PROD, resolve } from '#gen/config';
+import { headingComponents } from '#src/components/Headers';
 import HtmlPage from '#src/components/HtmlPage';
 import Template from '#src/components/Template/Template';
-
-import { headingComponents } from '#src/components/Headers';
 
 const INDEX_GLOB = 'public/*/_index.js';
 const PAGE_GLOB = [ 'public/**/*.{mdx,js}' ];
@@ -26,7 +25,7 @@ export const WATCH_GLOB = [
   '!public/static/**',
 ];
 
-const CANONICAL_ROOT = 'https://gdb.fyi/';
+const CANONICAL_ROOT = 'https://v2.gdb.fyi/';
 
 const MINIFY_CONFIG = {
   conservativeCollapse: true,
@@ -192,6 +191,7 @@ async function renderPageBody (page, options = {}) {
     ...options,
   };
 
+  const canonical = new URL(page.url, CANONICAL_ROOT).href;
   try {
     const { Page: PageBody } = page;
     const lang = manifest.languages[page.lang];
@@ -199,7 +199,7 @@ async function renderPageBody (page, options = {}) {
       <HtmlPage
         lang={page.lang}
         title={page.title}
-        canonical={`${path.join(CANONICAL_ROOT, page.url)}`}
+        canonical={canonical}
       >
         <Template>
           <PageBody components={headingComponents} />
