@@ -80,5 +80,21 @@ export default {
       description: 'The overall collection of chromosomes in an organism\'s genetic structure.',
       aliases: [ 'kareotype' ],
     },
+    transfeminine: {
+      description: 'A person medically transitioning from a testosterone based appearance to an estrogen based appearance.',
+    },
+    transmasculine: {
+      description: 'A person medically transitioning from an estrogen based feminine appearance to a testosterone based masculine appearance.',
+    },
+    ssri: {
+      description: 'Selective Serotonin Reuptake Inhibitor, a form of antidepressant.',
+    },
+    terf: {
+      description: [
+        'Trans-Exclusionary Radical Feminist',
+        'Originally this term referred to a specific subset of second-wave feminists which saw transgender people as complicit in patriarchy and would drive them from feminist spaces. Today it serves as a prejorative shorthand for transphobic women who persecute trans people under the guise of feminist ideals.',
+      ],
+      aliases: [ 'terfs' ],
+    },
   },
 };
