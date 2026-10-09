@@ -22,11 +22,16 @@ export default function Tweet ({
     CssPrefix
   );
 
-  let utc;
+  let utc, qdate;
   date = date ? new Date(date) : null;
   if (!isValid(date)) date = null;
   if (date) {
     utc = date.toUTCString();
+    qdate = intlFormat(date, {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+    });
     date = [
       intlFormat(date, {
         timeStyle: 'short',
@@ -42,6 +47,7 @@ export default function Tweet ({
 
   const media = [];
   const body = [];
+  let quoted = null;
 
   if (children && !Array.isArray(children)) {
     children = [ children ];
@@ -52,6 +58,9 @@ export default function Tweet ({
     return null;
   }
   for (const c of children) {
+    if (c.type === Tweet) {
+      quoted = c;
+    }
     if (c.type === TweetBody) {
       c.typeName = 'body';
       body.push(c);
@@ -69,18 +78,26 @@ export default function Tweet ({
         <strong>
           {displayName}
         </strong>
-        <span>@{username}</span>
+        <span class="tweet-user">@{username}</span>
+        <time class="tweet-date" datetime={utc} title={utc}>{qdate}</time>
         <Image src="/twitter/logo.svg" alt="Twitter Logo" className="tweet-logo" />
       </a>
+      {quoted}
       {body}
       {media.length && (
         <div className={[ 'tweet-entities', 'lightbox', `entity-count-${media.length}`, `entity-type-${media[0].typeName || 'unknown'}` ]}>
+          <div class="tweet-entities-inner">
+            <div>
+              <div class="tweet-entities-grid">
           {media}
+              </div>
+            </div>
+          </div>
         </div>
       ) || null}
       {date && (
       <div class="tweet-footer">
-          <time class="tweet-date" datetime={utc} title={utc}>{date}</time>
+        <time class="tweet-date" datetime={utc} title={utc}>{date}</time>
       </div>
       )}
     </Component>

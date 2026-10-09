@@ -13,7 +13,7 @@ export async function getDimensions (source) {
   const absPath = resolve(relPath);
 
   if (!await fs.pathExists(absPath)) {
-    throw new Error(`Could not find file "${source}"`);
+    throw new Error(`Could not find file "${source} (${absPath})"`);
   }
 
   const { width, height } = await imageSizeFromFile(absPath);
@@ -46,7 +46,7 @@ export async function computeSrc (source, { hash, noShrink } = {}) {
   const absPath = resolve(relPath);
 
   if (!await fs.pathExists(absPath)) {
-    throw new Error(`Could not find file "${source}"`);
+    throw new Error(`Could not find file "${source} (${absPath})"`);
   }
 
   if (!hash) {
