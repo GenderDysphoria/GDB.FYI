@@ -1,13 +1,11 @@
 import clsx from 'clsx';
+import { slug } from 'github-slugger';
 
 import SvgIcon from '#src/components/SvgIcon';
 
 function getAnchor (text) {
   if (typeof text !== 'string') return null;
-  return text
-    .toLowerCase()
-    .replace(/[^a-z0-9 ]/g, '')
-    .replace(/[ ]/g, '-');
+  return slug(text);
 }
 
 const CssPrefix = 'ui-header';

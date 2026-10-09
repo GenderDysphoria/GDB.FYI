@@ -87,6 +87,7 @@
     "fancy-log": "^2.0.0",
     "fast-glob": "^3.3.3",
     "fs-extra": "^11.3.5",
+    "github-slugger": "^2.0.0",
     "glob-watcher": "^6.0.0",
     "gulp-awspublish": "^9.0.0",
     "hasha": "^6.0.0",

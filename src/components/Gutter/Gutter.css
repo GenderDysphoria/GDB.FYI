@@ -16,13 +16,22 @@
   @media screen and (width >= $breakpoint-md) {
     position: relative;
     height: 0;
-    left: calc(100% + 1em);
     width: var(--gutter-width);
     padding: 0 1em;
+
+    left: calc(100% + 1em);
+    html[dir=rtl] & {
+      left: unset;
+      right: calc(100% + 1em);
+    }
   }
 
   @media screen and ($breakpoint-sm < width < $breakpoint-md) {
     float: right;
+    html[dir="rtl"] & {
+      float: left;
+    }
+
     width: var(--gutter-width);
     margin-inline-start: 1em;
     zoom: 0.9;
@@ -34,6 +43,10 @@
 
     &:not(.print-inline) {
       float: right;
+      html[dir="rtl"] & {
+        float: left;
+      }
+  
       width: 25vw;
       margin-inline-start: 1em;
     }

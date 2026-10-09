@@ -261,6 +261,10 @@
     counter-increment: section;
     position: absolute;
     left: var(--spacing);
+    html[dir="rtl"] & {
+      left: unset;
+      right: var(--spacing);
+    }
   }
 
   ul& a {
@@ -276,7 +280,7 @@
     }
 
     > a {
-      display: block;
+      display: flex;
       padding: var(--spacing) var(--spacing-2);
       padding-inline-start: calc(var(--spacing-2) + 2ch);
       padding-inline-end: var(--spacing-half);
@@ -365,6 +369,7 @@
       display: block;
       padding: var(--spacing) var(--spacing-2);
       padding-inline-end: var(--spacing-half);
+      text-decoration: none;
 
       background-color: var(--ui-template-nav-bg-color);
       border-block-start: 1px solid var(--ui-template-nav-border-color);

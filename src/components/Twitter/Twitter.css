@@ -21,6 +21,10 @@
   overflow-x: hidden;
   overflow-y: auto;
 
+  /* default to all tweets being ltr and override when translated */
+  direction: ltr;
+  &.rtl { direction: rtl }
+
   &:not(.grid-row) {
     box-shadow: 0 0 5px 2px rgb(from var(--trans-blue-main) r g b / 50%);
   }

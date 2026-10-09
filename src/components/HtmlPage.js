@@ -22,7 +22,7 @@ export default async function HtmlPage ({
   return (
     <Fragment>
       <RawHtml>{'<!DOCTYPE html>'}</RawHtml>
-      <html lang={lang}>
+      <html lang={lang} dir={metadata.rtl ? 'rtl' : 'ltr'}>
         <head {...{ [Priority]: -1 }}>
           <meta http-equiv="content-type" content="text/html; charset=utf-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -81,8 +81,13 @@ export default async function HtmlPage ({
           <link href="//fonts.googleapis.com/css?family=Sriracha:400" rel="stylesheet" />
           <link href="//fonts.googleapis.com/css?family=Lato:100,200,300,400,700,800" rel="stylesheet" />
           <link href="//fonts.googleapis.com/css?family=Roboto:300,400,600" rel="stylesheet" />
-          <link href="//fonts.googleapis.com/css?family=Inter:300,400,600" rel="stylesheet" />
           <link href="//fonts.googleapis.com/css?family=Gothic+A1:300,400,600" rel="stylesheet" />
+          {metadata.rtl && (
+            <>
+              <link href="//fonts.googleapis.com/css2?family=Amiri:wght@100;200;300;400;500;600;700" rel="stylesheet" />
+              <link href="//fonts.googleapis.com/css2?family=Reem+Kufi:wght@100;200;300;400;500;600;700" rel="stylesheet" />
+            </>
+          )}
           <link rel="stylesheet" href={`/static/${BUILD_HASH}/bundle.css`} type="text/css" />
           {head}
           <ScriptAsset src="i.js" data-i-url={IS_PROD ? 't.genderdysphoria.fyi/i' : '/i'} />

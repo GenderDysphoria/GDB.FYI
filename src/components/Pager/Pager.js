@@ -16,13 +16,14 @@ export default function Paper ({
 
   const next = this.metadata.next && this.pages[this.metadata.next];
   const prev = this.metadata.previous && this.pages[this.metadata.previous];
+  const { rtl } = this.metadata;
 
   return (
     <Component className={classes}>
       {prev
         ? (
         <Button variant="contained" color="primary" size="sm" href={prev.url} className="prev">
-          <SvgIcon icon="angle-left" />
+          {rtl ? <SvgIcon icon="angle-right" aria-hidden="true" /> : <SvgIcon icon="angle-left" aria-hidden="true" />}
           <span>{prev.linkTitle}</span>
         </Button>
           )
@@ -32,7 +33,7 @@ export default function Paper ({
       {next && (
         <Button variant="contained" color="primary" size="sm" href={next.url} className="next">
           <span>{next.linkTitle}</span>
-          <SvgIcon icon="angle-right" />
+          {rtl ? <SvgIcon icon="angle-left" aria-hidden="true" /> : <SvgIcon icon="angle-right" aria-hidden="true" />}
         </Button>
       )}
     </Component>

@@ -81,3 +81,16 @@
 body {
   font-family: var(--font-family-primary);
 }
+
+html[lang="ar"] {
+  --font-family-primary: 'Amiri', Ariel, sans-serif;
+  --font-family-secondary: 'Reem Kufi', 'Helvetica Neue', Helvetica, serif;
+}
+
+html[lang=de], html[lang=pl], html[lang=hu], html[lang=fr] {
+  --font-family-secondary: 'Helvetica Neue', Helvetica, serif;
+}
+
+html[lang=ko] {
+  --font-family-primary: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
