@@ -31,6 +31,7 @@ export const meta = {
   key: 'fulltext',
   title: 'كتاب اضطراب الهوية الجنسية - The Gender Dysphoria Bible',
   description: 'استكشافٌ للصور المتعددة التي يتجلى فيها \"اضطراب الهوية الجنسية\" ما يعنيه أن يكون المرء عابرًا جنسيًا.',
+  image: '/ar/images/titlecard.png',
 };
 
 export default function Fulltext () {

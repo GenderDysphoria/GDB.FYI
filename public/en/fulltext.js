@@ -1,6 +1,6 @@
-import Introduction from './index.mdx';
-
 import { headingComponents } from '#src/components/Headers';
+
+import Introduction from './index.mdx';
 
 const pages = (await Promise.all([
   import('./what-is-gender.mdx'),
@@ -32,6 +32,7 @@ export const meta = {
   title: 'The Gender Dysphoria Bible',
   description: 'A dive into the multitude of ways that gender dysphoria manifests and what it means to be transgender.',
   url: '/en/fulltext',
+  image: '/en/images/titlecard.png',
 };
 
 export default function Fulltext () {
