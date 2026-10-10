@@ -60,7 +60,10 @@ async function loadPage (relPath, options = {}) {
   };
 
   if (!meta.lang) {
-    [ , meta.lang = 'en' ] = relPath.match(/\/(..)\//) || [];
+    [ , meta.lang ] = relPath.match(/\/(.+)\//) || [ null, 'en' ];
+  }
+  if (!meta.lang) {
+    meta.lang = 'en';
   }
 
   if (!meta.url) {
