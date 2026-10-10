@@ -27,10 +27,6 @@ export default {
     '/en/regrets',
     '/en/conclusion',
   ],
-  pdf: {
-    url: '/en/gdb.pdf',
-    caption: 'Download as PDF',
-  },
   messages: {
     SITE_TITLE: 'The Gender Dysphoria Bible',
     SITE_DESCRIPTION: 'A resource for those questioning their gender, already on a gender journey, or simply wanting to learn more about what it is to be transgender.',
