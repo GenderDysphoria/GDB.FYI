@@ -58,7 +58,11 @@ export default {
       aliases: [ 'AFABs' ],
     },
     GLAAD: {
-      description: [ 'Gay & Lesbian Alliance Against Defamation', 'A US based organization that protests defamatory coverage of queer people and pushes for their acceptance.', ' Official website: https://www.glaad.org/' ],
+      description: [
+        'Gay & Lesbian Alliance Against Defamation',
+        'A US based organization that protests defamatory coverage of queer people and pushes for their acceptance.',
+        'Official website: https://www.glaad.org/',
+      ],
     },
     SoC: {
       description: [
