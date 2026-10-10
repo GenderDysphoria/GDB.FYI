@@ -28,7 +28,7 @@ Please **do not submit AI generated content**, this is a human made project.
 
 ## How to Contribute a Translation
 
-Every language in the GDB is organized under it's own two character [localization code](https://en.wikipedia.org/wiki/Language_localisation#Language_tags_and_codes) (just the first two, please, no regional dialects). You first step should be to look up the code for the language you wish to translate into.
+Every language in the GDB is organized under it's own two character [localization code](https://en.wikipedia.org/wiki/Language_localisation#Language_tags_and_codes) (some exceptions are made for a full two and two code where regional text differs significantly, such as the two chinese translations). You first step should be to look up the code for the language you wish to translate into.
 
 Download [this zip file](/gdb.zip) to fetch a recent copy of the english text. This file extracts into all the raw data that is used to construct the english version of the GDB site content. Alternatively, if you are working directly in the GitHub repository, you can just duplicate the `public/en` folder and give it the new language code.
 
