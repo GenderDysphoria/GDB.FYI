@@ -82,9 +82,18 @@ body {
   font-family: var(--font-family-primary);
 }
 
+html[dir="rtl"] {
+  direction: rtl;
+}
+
 html[lang="ar"] {
+  direction: rtl;
   --font-family-primary: 'Amiri', Ariel, sans-serif;
   --font-family-secondary: 'Reem Kufi', 'Helvetica Neue', Helvetica, serif;
+
+  body {
+    direction: rtl;
+  }
 }
 
 html[lang=de], html[lang=pl], html[lang=hu], html[lang=fr] {
@@ -93,4 +102,9 @@ html[lang=de], html[lang=pl], html[lang=hu], html[lang=fr] {
 
 html[lang=ko] {
   --font-family-primary: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+html[lang=tw], html[lang=zh] {
+  --font-family-primary: "Noto Sans TC", "Noto Sans SC", "IBM Plex Sans JP", "Huninn", sans-serif;
+  --font-family-secondary: "Huninn", "Noto Sans TC", "Noto Sans SC", "IBM Plex Sans JP", sans-serif;
 }

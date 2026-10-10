@@ -88,6 +88,12 @@ export default async function HtmlPage ({
               <link href="//fonts.googleapis.com/css2?family=Reem+Kufi:wght@100;200;300;400;500;600;700" rel="stylesheet" />
             </>
           )}
+          {(lang === 'zh' || lang === 'tw') && (
+            <>
+              <link href="//fonts.googleapis.com/css2?family=Huninn:wght@400;700" rel="stylesheet" />
+              <link href="//fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&family=Noto+Sans+SC:wght@100..900&family=Noto+Serif+TC:wght@200..900" rel="stylesheet" />
+            </>
+          )}
           <link rel="stylesheet" href={`/static/${BUILD_HASH}/bundle.css`} type="text/css" />
           {head}
           <ScriptAsset src="i.js" data-i-url={IS_PROD ? 't.genderdysphoria.fyi/i' : '/i'} />
