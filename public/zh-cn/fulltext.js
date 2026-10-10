@@ -31,8 +31,8 @@ export const meta = {
   key: 'fulltext',
   title: '性别烦躁指南',
   description: '为那些正在质疑探索中的人、那些在跨性别道路上的人和单纯想成为盟友的人提供资源。',
-  url: '/zh/fulltext',
-  image: '/zh/images/titlecard.png',
+  url: '/zh-cn/fulltext',
+  image: '/zh-cn/images/titlecard.png',
 };
 
 export default function Fulltext () {
