@@ -39,15 +39,23 @@ const shrink = (input) => (IS_PROD ? minify(input, MINIFY_CONFIG) : input);
 
 const intlCache = createIntlCache();
 
+const mtime = (f) =>
+  fs.stat(resolve(f))
+    .catch(() => null)
+    .then((stats) => (stats && new Date(stats.mtimeMs)));
+
 async function loadPage (relPath, options = {}) {
   const {
     cwd = ROOT_DIR,
   } = options;
 
-  const { default: Page, meta: sourceMeta } = await import(path.resolve(cwd, relPath) + `?update=${Date.now()}`);
+  const absPath = path.resolve(cwd, relPath);
+
+  const { default: Page, meta: sourceMeta } = await import(absPath + `?update=${Date.now()}`);
   const meta = {
     ...sourceMeta,
     file: relPath,
+    mtime: await mtime(absPath),
     Page,
   };
 
@@ -182,6 +190,18 @@ async function buildManifest (options = {}) {
   log(`    Manifest written to ${path.relative(ROOT_DIR, destPath)}`);
 }
 
+function PageWrapper ({ children, ...props }) {
+  return (
+    <HtmlPage
+      {...props}
+    >
+      <Template>
+        {children}
+      </Template>
+    </HtmlPage>
+  );
+}
+
 async function renderPageBody (page, options = {}) {
   const {
     cwd = ROOT_DIR,
@@ -195,16 +215,15 @@ async function renderPageBody (page, options = {}) {
   try {
     const { Page: PageBody } = page;
     const lang = manifest.languages[page.lang];
+    const Pw = page.wrapper || PageWrapper;
     page.body = await render(
-      <HtmlPage
+      <Pw
         lang={page.lang}
         title={page.title}
         canonical={canonical}
       >
-        <Template>
-          <PageBody components={headingComponents} />
-        </Template>
-      </HtmlPage>,
+        <PageBody components={headingComponents} />
+      </Pw>,
       {
         metadata: page,
         BUILD_HASH,
@@ -213,6 +232,7 @@ async function renderPageBody (page, options = {}) {
         pages: manifest.pages,
         routes: manifest.routes,
         languages: manifest.languages,
+        CANONICAL_ROOT,
       }
     );
 

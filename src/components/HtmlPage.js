@@ -13,9 +13,9 @@ export default async function HtmlPage ({
   head,
 }) {
   const { BUILD_HASH, metadata, intl } = this;
-  let titlecard;
-  if (metadata.image) {
-    const [ files, promises ] = await computeSrc(metadata.image);
+  let titlecard = metadata.image || this.lang.image;
+  if (titlecard) {
+    const [ files, promises ] = await computeSrc(titlecard);
     titlecard = new URL(files.at(-1).url, canonical).href;
     await Promise.all(promises);
   }
