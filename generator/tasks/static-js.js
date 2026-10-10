@@ -41,7 +41,7 @@ export default async function staticJsTask (options) {
     bundle: true,
     write: true,
     outdir: distPath,
-    sourcemap: true,
+    sourcemap: !minify,
     minify,
     treeShaking: true,
     metafile: true,

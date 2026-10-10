@@ -77,10 +77,12 @@ export default async function cssTask (options) {
   ]).process(code, {
     from: bundlePath,
     to: distPath,
-    map: {
-      annotation: true,
-      prev: map,
-    },
+    map: minify
+      ? false
+      : {
+          annotation: true,
+          prev: map,
+        },
   });
   const destination = path.resolve(cwd, distPath);
 
