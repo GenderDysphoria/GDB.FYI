@@ -18,6 +18,8 @@ export default function Paper ({
   const prev = this.metadata.previous && this.pages[this.metadata.previous];
   const { rtl } = this.metadata;
 
+  if (!next && !prev) return null;
+
   return (
     <Component className={classes}>
       {prev
