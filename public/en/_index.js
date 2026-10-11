@@ -2,6 +2,7 @@ export default {
   lang: 'en',
   name: 'English',
   menuName: 'English',
+  image: '/en/images/titlecard.png',
   pages: [
     '/en/',
     '/en/what-is-gender',
