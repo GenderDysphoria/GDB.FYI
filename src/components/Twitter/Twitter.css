@@ -175,14 +175,16 @@
   }
 
   .tweet-text {
+    margin-block: var(--spacing);
+
     ol, ul {
       padding-inline-start: 3ch;
     }
   }
 
   .tweet-entities {
-    margin-block-start: 10px;
 
+    margin-block: var(--spacing);
     border-radius: 14px;
     overflow: hidden;
     max-width: 600px;

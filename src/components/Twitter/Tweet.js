@@ -45,9 +45,8 @@ export default function Tweet ({
     ].join(' - ');
   }
 
-  const media = [];
+  let media = [];
   const body = [];
-  let quoted = null;
 
   if (children && !Array.isArray(children)) {
     children = [ children ];
@@ -57,18 +56,32 @@ export default function Tweet ({
     console.log('Tweet without tweet', id);
     return null;
   }
+
   for (const c of children) {
-    if (c.type === Tweet) {
-      quoted = c;
-    }
-    if (c.type === TweetBody) {
-      c.typeName = 'body';
-      body.push(c);
-    }
     if (c.type === TweetMedia) {
       c.typeName = 'media';
       media.push(c);
+    } else if (media.length) {
+      body.push(<TweetMediaCollection media={media} />);
+      media = [];
     }
+
+    if (c.type === Tweet) {
+      c.typeName = 'quote';
+      body.push(c);
+      continue;
+    }
+
+    if (c.type === TweetBody) {
+      c.typeName = 'body';
+      body.push(c);
+      continue;
+    }
+  }
+
+  if (media.length) {
+    body.push(<TweetMediaCollection media={media} />);
+    media = [];
   }
 
   return (
@@ -82,23 +95,11 @@ export default function Tweet ({
         <time class="tweet-date" datetime={utc} title={utc}>{qdate}</time>
         <Image src="/twitter/logo.svg" alt="Twitter Logo" className="tweet-logo" />
       </a>
-      {quoted}
       {body}
-      {media.length && (
-        <div className={[ 'tweet-entities', 'lightbox', `entity-count-${media.length}`, `entity-type-${media[0].typeName || 'unknown'}` ]}>
-          <div class="tweet-entities-inner">
-            <div>
-              <div class="tweet-entities-grid">
-          {media}
-              </div>
-            </div>
-          </div>
-        </div>
-      ) || null}
       {date && (
-      <div class="tweet-footer">
-        <time class="tweet-date" datetime={utc} title={utc}>{date}</time>
-      </div>
+        <div class="tweet-footer">
+          <time class="tweet-date" datetime={utc} title={utc}>{date}</time>
+        </div>
       )}
     </Component>
   );
@@ -109,6 +110,20 @@ export function TweetBody ({
 }) {
   return (
     <div className="tweet-text">{children}</div>
+  );
+}
+
+function TweetMediaCollection ({ media }) {
+  return (
+    <div className={[ 'tweet-entities', 'lightbox', `entity-count-${media.length}`, `entity-type-${media[0].typeName || 'unknown'}` ]}>
+      <div class="tweet-entities-inner">
+        <div>
+          <div class="tweet-entities-grid">
+            {media}
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
