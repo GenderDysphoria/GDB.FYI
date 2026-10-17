@@ -193,6 +193,10 @@ async function buildManifest (options = {}) {
     });
     lang.keyed = keyBy(lang.pages, 'key');
     lang.intl = createIntl({ locale: lang.lang, messages: lang.messages }, intlCache);
+
+    if (!lang.intl) {
+      throw new Error(`Could not load internationalization for ${lang.lang}`);
+    }
   }
 
   manifest = { pages, routes, languages };
