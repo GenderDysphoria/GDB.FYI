@@ -32,7 +32,7 @@
       float: left;
     }
 
-    width: var(--gutter-width);
+    max-width: var(--gutter-width);
     margin-inline-start: 1em;
     zoom: 0.9;
   }
@@ -55,15 +55,16 @@
   &.flex-end, &.flex-center {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   &.flex-end {
     justify-content: flex-end;
+    align-items: stretch;
   }
 
   &.flex-center {
     justify-content: center;
+    align-items: center;
   }
 
   @media print {
