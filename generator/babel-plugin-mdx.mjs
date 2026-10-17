@@ -1,6 +1,7 @@
 import parser from '@babel/parser';
 import { compileSync } from '@mdx-js/mdx';
 import estreeToBabel from 'estree-to-babel';
+import remarkGfm from 'remark-gfm';
 import path from 'node:path';
 
 export default function babelPluginSyntaxMdx () {
@@ -24,6 +25,7 @@ function babelParserWithMdx (value, options) {
       // Tell `@mdx-js/mdx` to return a Babel tree instead of serialized JS.
       {
         recmaPlugins: [ recmaBabel ],
+        remarkPlugins: [ remarkGfm ],
         jsxRuntime: 'automatic',
         jsxImportSource: '../..',
         development: true,
