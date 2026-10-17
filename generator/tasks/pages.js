@@ -1,6 +1,6 @@
 import { createIntl, createIntlCache } from '@formatjs/intl';
 import { keyBy, threepiece } from '@twipped/utils';
-import { render } from 'essex';
+import { RawHtml, render } from 'essex';
 import log from 'fancy-log';
 import glob from 'fast-glob';
 import fs from 'fs-extra';
@@ -81,6 +81,16 @@ async function loadPage (relPath, options = {}) {
     } else {
       meta.output = path.join(meta.url.slice(1), 'index.html');
     }
+  }
+
+  if (meta.aliases) {
+    meta.aliases = meta.aliases.map((uri) => {
+      if (path.extname(uri)) {
+        return uri.slice(1);
+      } else {
+        return path.join(uri.slice(1), 'index.html');
+      }
+    });
   }
 
   return meta;
@@ -255,7 +265,64 @@ async function renderPageBody (page, options = {}) {
     throw e;
   }
 
+  await renderPageAliases(page, options);
+
   return page;
+}
+
+async function renderPageAliases (page, options = {}) {
+  const {
+    cwd = ROOT_DIR,
+    distPath,
+  } = options = {
+    distPath: 'dist',
+    ...options,
+  };
+
+  if (!page.aliases?.length) return [];
+
+  for (const alias of page.aliases) {
+    let body;
+    const canonical = new URL(page.url, CANONICAL_ROOT).href;
+    try {
+      const lang = manifest.languages[page.lang];
+      const Pw = page.wrapper || PageWrapper;
+      page.body = await render(
+        <Pw
+          lang={page.lang}
+          title={page.title}
+          canonical={canonical}
+        >
+          <RawHtml>{`<meta http-equiv="refresh" content="0; URL='${canonical}'" />`}</RawHtml>
+        </Pw>,
+        {
+          metadata: page,
+          BUILD_HASH,
+          lang,
+          intl: lang.intl,
+          pages: manifest.pages,
+          routes: manifest.routes,
+          languages: manifest.languages,
+          CANONICAL_ROOT,
+        }
+      );
+
+      try {
+        body = await shrink(page.body);
+      } catch (e) {
+        e.message = `Error while minifying alias "${alias}": ${e.message.slice(0, 50)}`;
+        throw e;
+      }
+
+      const destPath = path.resolve(cwd, distPath, alias);
+      log(`    Wrote ${path.relative(ROOT_DIR, destPath)}`);
+      await fs.ensureFile(destPath);
+      await fs.writeFile(destPath, body);
+    } catch (e) {
+      e.message = `Error while rendering ${page.file} alias ${alias}: ${e.message}`;
+      throw e;
+    }
+  }
 }
 
 async function renderAllPages (options = {}) {
