@@ -1,5 +1,10 @@
 export default {
   lang: 'zh-cn',
+
+  // these two should be updated any time a translation is made current
+  version: '2.0.0',
+  since: '2026-10-17',
+
   name: '中文 (ZH)',
   menuName: '中文 (Chinese)',
   pages: [
@@ -37,6 +42,7 @@ export default {
     FOOTER_PRIVACY_POLICY: '隐私政策',
     FULL_TEXT: '查看全文',
     PDF_DOWNLOAD: '下载 PDF',
+    TRANSLATION_OUTDATED: 'This translation is not up to date. If you would like to <a>help update it</a>, see GitHub for a <c>list of significant changes to the english version</c> since the last update to <b>this translation</b>.',
   },
   glossary: {
     agab: {

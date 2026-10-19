@@ -211,14 +211,14 @@
   background-color: var(--background-paper);
   padding: var(--spacing) var(--spacing-2);
 
-  .ui-disclaimer {
+  .ui-disclaimer, .ui-outdated {
     margin: calc(var(--spacing) * -1) calc(var(--spacing-2) * -1) var(--spacing);
     padding: var(--spacing) var(--spacing-2);
   }
 
   @media screen and (width > $breakpoint-md) {
     margin-inline-end: var(--gutter-width);
-    .ui-disclaimer { margin-inline-end: calc((var(--gutter-width) * -1) - var(--spacing-2)); }
+    .ui-disclaimer, .ui-outdated { margin-inline-end: calc((var(--gutter-width) * -1) - var(--spacing-2)); }
   }
 }
 

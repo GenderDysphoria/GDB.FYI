@@ -1,5 +1,10 @@
 export default {
   lang: 'ar',
+
+  // these two should be updated any time a translation is made current
+  version: '1.0.0',
+  since: '2026-10-05',
+
   rtl: true,
   name: 'العربية (Ar)',
   menuName: 'العربية (Arabic)',
@@ -38,6 +43,7 @@ export default {
     FOOTER_PRIVACY_POLICY: 'سياسة الخصوصية',
     FULL_TEXT: 'عرض النص الكامل',
     PDF_DOWNLOAD: 'تنزيل ملف PDF',
+    TRANSLATION_OUTDATED: 'هذه الترجمة ليست محدّثة. إذا كنت ترغب في <a>المساعدة في تحديثها</a>، يمكنك الاطلاع على GitHub لمعرفة <c>قائمة بالتغييرات الجوهرية التي طرأت على النسخة الإنجليزية</c> منذ آخر تحديث لـ <b>هذه الترجمة</b>.',
   },
   glossary: {
     agab: {

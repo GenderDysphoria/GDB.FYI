@@ -2,7 +2,7 @@ import * as esbuild from 'esbuild';
 import log from 'fancy-log';
 import glob from 'fast-glob';
 
-import BUILD_HASH from '#gen/build-hash';
+import { BUILD_HASH } from '#gen/build-hash';
 import { ROOT_DIR, IS_PROD } from '#gen/config';
 
 export const INCLUDE_GLOB = [ 'public/static/*/index.js', 'public/static/*.js' ];

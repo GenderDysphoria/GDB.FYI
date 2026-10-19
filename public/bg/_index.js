@@ -1,5 +1,10 @@
 export default {
   lang: 'bg',
+
+  // these two should be updated any time a translation is made current
+  version: '1.0.0',
+  since: '2026-10-05',
+
   name: 'Български (BG)',
   menuName: 'Български (Bulgarian)',
   image: '/bg/images/titlecard.png',
@@ -38,6 +43,7 @@ export default {
     FOOTER_PRIVACY_POLICY: 'Политика за поверителност',
     FULL_TEXT: 'Виж целия текст',
     PDF_DOWNLOAD: 'Изтегляне на PDF',
+    TRANSLATION_OUTDATED: 'Този превод не е актуален. Ако желаете да <a>помогнете за актуализирането му</a>, вижте в GitHub <c>списък със съществени промени в английската версия</c> от последното обновяване на <b>този превод</b> насам.',
   },
   glossary: {
     agab: {

@@ -6,8 +6,9 @@ import glob from 'fast-glob';
 import fs from 'fs-extra';
 import { minify } from 'html-minifier-terser';
 import path from 'node:path';
+import semver from 'semver';
 
-import BUILD_HASH from '#gen/build-hash';
+import { BUILD_HASH, ENGLISH_HASH, ENGLISH_VERSION } from '#gen/build-hash';
 import { ROOT_DIR, IS_PROD, resolve } from '#gen/config';
 import { headingComponents } from '#src/components/Headers';
 import HtmlPage from '#src/components/HtmlPage';
@@ -163,6 +164,10 @@ async function loadIndexes (options = {}) {
       const absPath = resolve(relPath);
       const language = (await import(absPath)).default;
       languages[language.lang] = language;
+
+      if (!language.version || semver.lt(language.version, ENGLISH_VERSION)) {
+        language.outdated = true;
+      }
     })
   );
   // console.log(languages);
@@ -244,6 +249,7 @@ async function renderPageBody (page, options = {}) {
       {
         metadata: page,
         BUILD_HASH,
+        ENGLISH_HASH,
         lang,
         intl: lang.intl,
         pages: manifest.pages,

@@ -1,5 +1,7 @@
 import clsx from 'clsx';
 
+import Outdated from '#src/components/Outdated/Outdated';
+
 const CssPrefix = 'ui-disclaimer';
 export default function Disclaimer ({
   component: Component = 'aside',
@@ -13,6 +15,9 @@ export default function Disclaimer ({
   );
 
   return (
-    <Component {...props} className={classes}>{children}</Component>
+    <>
+      <Outdated />
+      <Component {...props} className={classes}>{children}</Component>
+    </>
   );
 }

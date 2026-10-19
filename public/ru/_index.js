@@ -1,5 +1,10 @@
 export default {
   lang: 'ru',
+
+  // these two should be updated any time a translation is made current
+  version: '1.0.0',
+  since: '2026-10-05',
+
   name: 'Русский (RU)',
   menuName: 'русский (Russian)',
   image: '/ru/images/titlecard.png',
@@ -38,6 +43,7 @@ export default {
     FOOTER_PRIVACY_POLICY: 'политика конфиденциальности',
     FULL_TEXT: 'Посмотреть полный текст',
     PDF_DOWNLOAD: 'Скачать PDF',
+    TRANSLATION_OUTDATED: 'Этот перевод устарел. Если вы хотите <a>помочь с его обновлением</a>, ознакомьтесь на GitHub со <c>списком существенных изменений в английской версии</c>, произошедших с момента последнего обновления <b>этого перевода</b>.',
   },
   glossary: {
     agab: {

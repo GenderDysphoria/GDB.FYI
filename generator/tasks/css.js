@@ -13,7 +13,7 @@ import psNested from 'postcss-nested';
 import psEnv from 'postcss-preset-env';
 import psSimpleVars from 'postcss-simple-vars';
 
-import BUILD_HASH from '#gen/build-hash';
+import { BUILD_HASH } from '#gen/build-hash';
 import { ROOT_DIR, IS_PROD } from '#gen/config';
 
 export const INCLUDE_GLOB = 'src/**/*.css';

@@ -1,5 +1,10 @@
 export default {
   lang: 'zh-tw',
+
+  // these two should be updated any time a translation is made current
+  version: '1.0.0',
+  since: '2026-10-05',
+
   name: '台灣華語 (TW)',
   menuName: '台灣華語 (Taiwanese Mandarin)',
   image: '/zh-tw/images/titlecard.png',
@@ -38,6 +43,7 @@ export default {
     FOOTER_PRIVACY_POLICY: '隱私權政策',
     FULL_TEXT: '看全文',
     PDF_DOWNLOAD: '下載PDF',
+    TRANSLATION_OUTDATED: 'This translation is not up to date. If you would like to <a>help update it</a>, see GitHub for a <c>list of significant changes to the english version</c> since the last update to <b>this translation</b>.',
   },
   glossary: {
     agab: {

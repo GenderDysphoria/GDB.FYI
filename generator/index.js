@@ -1,6 +1,6 @@
 import log from 'fancy-log';
 
-import BUILD_HASH from './build-hash.js';
+import { BUILD_HASH } from './build-hash.js';
 import cleanupTask from './tasks/cleanup.js';
 import copy from './tasks/copy.js';
 import cssTask from './tasks/css.js';

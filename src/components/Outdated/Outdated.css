@@ -1,0 +1,18 @@
+.ui-outdated {
+  background-color: light-dark(var(--warning-light), var(--warning-light));
+  border-block-end: 1px solid light-dark(var(--alpha-black-200), var(--alpha-white-200));
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+
+  &.ui-outdated p {
+    margin: 0;
+  }
+
+  & strong {
+    fontWeight: var(--font-weight-regular);
+  }
+
+  .no-disclaimer & {
+    display: none;
+  }
+}
