@@ -11,7 +11,7 @@
   --borderColorDark: var(--trans-pink-dark);
 
   max-width: 660px;
-  margin: 2em auto;
+  margin: var(--spacing) auto;
   font-size: 12px;
   border: 1px solid var(--borderColor);
   border-radius: .35em;
@@ -24,6 +24,10 @@
   /* default to all tweets being ltr and override when translated */
   direction: ltr;
   &.rtl { direction: rtl }
+
+  &:first-child {
+    margin-block-start: 0;
+  }
 
   &:not(.grid-row) {
     box-shadow: 0 0 5px 2px rgb(from var(--trans-blue-main) r g b / 50%);
