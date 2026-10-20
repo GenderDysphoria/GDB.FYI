@@ -51,7 +51,7 @@
   blockquote {
     font-family: var(--font-family-secondary);
     font-weight: 300;
-    font-size: 0.94em;
+    font-size: var(--font-size-sm);
     line-height: 1.4;
     /* background: light-dark(var(--trans-blue-lightest), var(--trans-blue-darkest)); */
     background: var(--surface-1);
