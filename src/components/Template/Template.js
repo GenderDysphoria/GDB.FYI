@@ -11,6 +11,7 @@ import SvgIcon from '#src/components/SvgIcon';
 import Text from '#src/components/Text';
 
 import LightDark from './LightDark.js';
+import BetaAnnounce from '../Beta/Beta.js';
 import Breakpoint from '../Breakpoint/Breakpoint.js';
 
 const CssPrefix = 'ui-template';
@@ -52,6 +53,7 @@ export default function Template ({
           <Navigation />
         </div>
         <Article className={`${CssPrefix}-body`}>
+          <BetaAnnounce />
           <script type="application/json" id="glossary">
             <RawHtml>{JSON.stringify(this.lang.glossary)}</RawHtml>
           </script>

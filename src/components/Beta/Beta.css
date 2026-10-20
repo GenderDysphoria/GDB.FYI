@@ -1,0 +1,27 @@
+.ui-beta-announce {
+  background-color: var(--primary-light);
+  border-block-end: 1px solid light-dark(var(--alpha-black-200), var(--alpha-white-200));
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+
+  margin: calc(var(--spacing) * -1) calc(var(--spacing-2) * -1) var(--spacing);
+  padding: var(--spacing) var(--spacing-2);
+
+  @media screen and (width > $breakpoint-md) {
+    margin-inline-end: calc((var(--gutter-width) * -1) - var(--spacing-2));
+  }
+
+  &.ui-beta-announce p {
+    margin: 0;
+
+    a { color: inherit; }
+  }
+
+  & strong {
+    fontWeight: var(--font-weight-regular);
+  }
+
+  .no-disclaimer & {
+    display: none;
+  }
+}
