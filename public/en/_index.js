@@ -60,6 +60,18 @@ export default {
       description: 'A person assigned the female gender at birth based on external genitalia',
       aliases: [ 'AFABs' ],
     },
+    hrt: {
+      title: 'HRT',
+      description: [
+        'Hormone Replacement Therapy',
+      ],
+    },
+    ffs: {
+      title: 'FFS',
+      description: [
+        'Facial Feminization Surgery',
+      ],
+    },
     GLAAD: {
       description: [
         'Gay & Lesbian Alliance Against Defamation',
@@ -92,6 +104,11 @@ export default {
     },
     transmasculine: {
       description: 'A person medically transitioning from an estrogen based feminine appearance to a testosterone based masculine appearance.',
+    },
+    enby: {
+      title: 'Enbies',
+      description: 'A short form term non-binary, meaning people whose gender does not fit within the binary notion of male and female.',
+      aliases: [ 'enbies', 'enbie' ],
     },
     ssri: {
       description: 'Selective Serotonin Reuptake Inhibitor, a form of antidepressant.',
