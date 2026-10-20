@@ -4,7 +4,7 @@
   --textLight: #697882;
   --textDark: light-dark(#1c2022, #b4d0dd);
   --textHover: #3b94d9;
-  --borderRadius: .35em;
+  --borderRadius: var(--shape-rounded-sm);
   --avatarSize: 40px;
 
   display: block;
@@ -14,6 +14,8 @@
   /* line-height:17px; */
   color: light-dark(#1c2022, #b4d0dd);
   text-decoration:none;
+
+  box-shadow: 0 0 5px 2px rgb(from var(--trans-blue-main) r g b / 50%);
 
   .ig-header {
     display: flex;
