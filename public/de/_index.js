@@ -2,7 +2,7 @@ export default {
   lang: 'de',
 
   // these two should be updated any time a translation is made current
-  version: '2.0.0',
+  version: '1.0.0',
   since: '2026-10-05',
 
   name: 'Deutsch (DE)',
