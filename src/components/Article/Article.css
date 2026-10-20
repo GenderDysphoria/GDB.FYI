@@ -28,6 +28,11 @@
     margin-block-end: 0;
   }
 
+  p:empty {
+    /* MDX sometimes creates empty P tags within components */
+    display: none;
+  }
+
   p a {
     transition-property: color, padding, margin;
     transition-duration: 0.3s;
