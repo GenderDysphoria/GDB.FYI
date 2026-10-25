@@ -60,6 +60,14 @@ export default {
       description: 'A person assigned the female gender at birth based on external genitalia',
       aliases: [ 'AFABs' ],
     },
+    comphet: {
+      title: '',
+      description: [
+        'Compulsory Heterosexuality',
+        'The systemic effect of patriarchial and heterosexual defaults within society that cause gay and multi-sexual people to ignore attraction to people of the same gender.',
+      ],
+      aliases: [ 'comp het', 'compulsory heterosexuality' ],
+    },
     hrt: {
       title: 'HRT',
       description: [
