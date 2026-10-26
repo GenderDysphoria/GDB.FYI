@@ -1,0 +1,280 @@
+import { TwitterEmbed, Tweet, Note, Gutter, Card } from '#src/common';
+import Disclaimer from './_disclaimer.mdx';
+import BarGraph from '#src/components/BarGraph/BarGraph';
+
+export const meta = {
+  key: 'regrets',
+  title: "Est-ce que ça en vaut la peine ?",
+  linkTitle: "Est-ce que ça en vaut la peine ?",
+  description: "Mais que se passe-t-il si je regrette ma transition ?",
+};
+
+<Disclaimer />
+# Est-ce que ça en vaut la peine ?
+
+<Note>
+  **Note de la personne responsable de la sélection** : Le texte qui suit constitue une large partie de l’article [Regrets, I've Had a Few](https://stainedglasswoman.substack.com/p/regrets-ive-had-a-few), écrit par la formidable Doc Impossible ; il est republié ici avec son autorisation. Vous pouvez découvrir d’autres écrits de son cru sur [Stained Glass Woman](https://stainedglasswoman.substack.com/).
+</Note>
+Lorsque les gens évoquent la peur de regretter leur transition, ils s'enferment souvent dans une fausse dichotomie : soit on est parfaitement et intensément heureux, soit on finit profondément malheureux, en ayant entamé un processus de « détransition » et en étant rongé par les regrets. Il n'y aurait, selon cette vision, aucun juste milieu. C'est pourquoi beaucoup d'entre nous, en pleine transition, ont le sentiment de devoir afficher leur joie à chaque instant — presque par défi — pour prouver à un monde sceptique que nous avons le droit d'exister.
+
+Personnellement, je trouve cela assez cruel.
+
+J'aimerais donc que nous ayons une discussion plus authentique sur ce que cela implique concrètement. Sur ce à quoi votre propre transition ressemblera, une fois que vous aurez trouvé le courage de faire ce « saut dans l'inconnu ».
+
+## Parlons chiffres
+
+Si vous avez déjà lu un article de *Stained Glass Woman*, vous savez que j'accorde une grande importance aux données ; commençons donc par là. Que disent les chiffres au sujet de la transition, et quels sont leurs effets sur nos vies et notre bien-être ?
+
+D'après la plus vaste étude jamais menée auprès des personnes trans — la *United States Trans Survey* de 2022, qui a recueilli les témoignages de plus de 92 000 personnes — les résultats sont pour le moins éloquents : 97 % des personnes ayant entamé une transition affirment que leur vie est aujourd'hui aussi bonne, voire meilleure, qu'elle ne l'était auparavant — et ce, en tenant compte de *tous* les aspects. Par exemple, si une personne a été renversée par une voiture et souffre désormais de douleurs chroniques, elle est comptée parmi les 3 % dont la situation s'est dégradée, alors même que cela n'a strictement rien à voir avec sa transition.
+
+<Card>
+  <Card.Header>Satisfaction dans la vie depuis la transition de genre</Card.Header>
+  <Card.Content>
+    <BarGraph>
+      <BarGraph.Row percentage={79}>Beaucoup plus satisfait</BarGraph.Row>
+      <BarGraph.Row percentage={15}>Un peu plus satisfait</BarGraph.Row>
+      <BarGraph.Row percentage={3}>Ni plus ni moins satisfait</BarGraph.Row>
+      <BarGraph.Row percentage={1}>Un peu moins satisfait</BarGraph.Row>
+      <BarGraph.Row percentage={2}>Beaucoup moins satisfait</BarGraph.Row>
+    </BarGraph>
+    Source: <a href="https://transequality.org/sites/default/files/2024-02/2022%20USTS%20Early%20Insights%20Report_FINAL.pdf">Rapport USTS 2022 sur les premières observations</a>, p. 17
+  </Card.Content>
+</Card>
+
+Les chiffres sont encore plus frappants en ce qui concerne le traitement hormonal et la chirurgie d’affirmation de genre. ***Moins d’un pour cent*** des personnes ayant recours à un traitement hormonal se disent moins satisfaites, quel que soit le plan considéré.
+
+<Card>
+  <Card.Header>Satisfaction à l’égard de la vie dans le contexte d’un traitement hormonal</Card.Header>
+  <Card.Content>
+    <BarGraph>
+      <BarGraph.Row percentage={84}>Beaucoup plus satisfait</BarGraph.Row>
+      <BarGraph.Row percentage={14}>Un peu plus satisfait</BarGraph.Row>
+      <BarGraph.Row percentage={1}>Ni plus ni moins satisfait</BarGraph.Row>
+      <BarGraph.Row percentage={1}>Un peu ou beaucoup moins satisfait</BarGraph.Row>
+    </BarGraph>
+    Source: <a href="https://transequality.org/sites/default/files/2024-02/2022%20USTS%20Early%20Insights%20Report_FINAL.pdf">Rapport USTS 2022 sur les premières observations</a>, p. 18
+  </Card.Content>
+</Card>
+
+Il est possible que vous ne travailliez pas dans le domaine médical et que, par conséquent, vous ne saisissiez pas bien ce que cela signifie. Laissez-moi vous expliquer : [le taux de regret moyen pour *toutes* les interventions chirurgicales confondues est de 14 %](https://pubmed.ncbi.nlm.nih.gov/28243695/). À l’inverse, la plupart des études portant spécifiquement sur les chirurgies d’affirmation de genre font état d’un taux de regret compris entre 0,3 % et 0,5 %. Cela signifie que le taux de regret associé aux chirurgies de transition est jusqu’à *quarante-huit fois plus faible* que la moyenne observée pour l’ensemble des interventions chirurgicales.
+
+Et ça ? C’est tout simplement incroyable. Il s’agit du taux de regret le plus bas, toutes catégories de chirurgie confondues — et de loin.
+
+Mais prenons un peu de recul : si l’on ne se limite pas à une seule étude, mais que l’on examine l’ensemble des recherches disponibles, que nous disent-elles sur les résultats d’une transition, tant sur le plan de la santé physique qu’émotionnelle ? Eh bien, la réponse est : [extrêmement positive](https://whatweknow.inequality.cornell.edu/topics/lgbt-equality/what-does-the-scholarly-research-say-about-the-well-being-of-transgender-people/).
+
+Alors… où est le piège, me direz-vous ? J’avais bien mentionné des « astérisques ».
+
+Eh oui. Il y en a bien. Et ces astérisques, ce sont les autres.
+
+<Card>
+  <Card.Header>Revenus, emploi, expériences en milieu professionnel et stabilité du logement</Card.Header>
+  <Card.Content>
+    - Plus d’un tiers (34 %) des personnes interrogées vivaient dans la pauvreté.
+    - Le taux de chômage parmi les personnes ayant répondu à l’enquête USTS était de 18 %.
+    - Plus d’une personne interrogée sur dix (11 %) ayant déjà occupé un emploi a déclaré avoir été licenciée, contrainte à la démission, avoir perdu son emploi ou avoir fait l’objet d’un licenciement économique en raison de son identité ou de son expression de genre.
+    - Près d’un tiers (30 %) des personnes interrogées ont connu une situation d’itinérance au cours de leur vie.
+
+    Source: <a href="https://transequality.org/sites/default/files/2024-02/2022%20USTS%20Early%20Insights%20Report_FINAL.pdf">Rapport USTS 2022 : Premiers enseignements</a> p. 21
+  </Card.Content>
+</Card>
+Notre taux de chômage est quatre fois supérieur à la moyenne nationale aux États-Unis. Notre taux de pauvreté est trois fois supérieur à la moyenne nationale aux États-Unis. La discrimination à l'embauche est courante, bien qu'il existe des protections juridiques assez claires. Mais vous le saviez déjà. Peut-être pas les chiffres exacts, certes, mais vous en saisissez l'essentiel. C'est précisément pour cela que vous craignez de le regretter, et que vous résistez à l'appel de la transition.
+
+C'est d'ailleurs pour cette raison que vous lisez cet article, n'est-ce pas ?
+
+Alors, voici un point sur lequel je vous invite à réfléchir : qu'en est-il des personnes mentionnées dans ce tableau, où une personne sur dix a été licenciée simplement parce qu'elle était trans ? Comparez cela avec le tableau précédent, qui indique que seules 3 % des personnes estiment que leur vie s'est dégradée, d'une manière ou d'une autre, depuis leur transition. Vous savez à quel point il est terrible de perdre son emploi ; mais se faire licencier en raison de ce que l'on est, c'est bien, bien pire. Et pourtant, la quasi-totalité des personnes interrogées dans cette étude qui ont été licenciées parce qu'elles étaient trans ont tout de même affirmé que leur transition avait été, au final, une expérience positive.
+
+Réfléchissez un instant : à quel point les aspects positifs doivent-ils être marquants pour compenser une telle épreuve ?
+
+Eh oui.
+
+Comme je l'ai dit : c'est une expérience faite de contrastes, mais c'est aussi la chose la plus merveilleuse que vous puissiez entreprendre. Ces deux réalités peuvent tout à fait coexister.
+
+## Et si je me trompe et que je reviens sur ma transition ?
+
+C'est une autre préoccupation que j'entends souvent : « Comment puis-je être sûr(e) de faire le bon choix ? » « Et si je reviens sur ma transition ? Est-ce que je ne vais pas tout regretter ? »
+
+Très bien. Parlons de ce retour en arrière — ce qu'on appelle la « détransition ». Je vous le promets : la réalité est bien moins sombre que ce que vous imaginez. Commençons par examiner les chiffres globaux. Parmi les personnes interrogées ayant effectué une transition, **9 % sont revenues à un mode de vie correspondant au sexe qui leur avait été assigné à la naissance** à un moment donné de leur existence, principalement en raison de la stigmatisation sociale et structurelle.
+— *[Rapport USTS sur la santé et le bien-être](https://transequality.org/sites/default/files/2025-06/USTS_2022Health%26WellbeingReport_WEB.pdf), p. 51*
+
+C’est préoccupant, n’est-ce pas ? Le fait qu’une personne sur dix environ revienne sur sa transition — un phénomène parfois appelé « détransition » — peut sembler alarmant. Mais restez avec moi : l’étude a creusé la question pour en comprendre les raisons, et les réponses apportées sont particulièrement révélatrices.
+
+<Card>
+  <Card.Header>
+    <strong>Raisons pour lesquelles les répondants vivent, au moins pendant quelque temps, dans le sexe qui leur a été assigné à la naissance (SAAN)</strong>
+    <small style="display: block">La largeur des barres indique la proportion, au sein de ces 9 %, de personnes ayant entamé un processus de détransition ; les chiffres correspondent au pourcentage de l’ensemble des répondants.</small>
+  </Card.Header>
+  <Card.Content>
+    <BarGraph>
+      <BarGraph.Row percentage="3.69" barwidth={41}>C’était tout simplement trop difficile pour moi d’être une personne trans dans ma communauté</BarGraph.Row>
+      <BarGraph.Row percentage="3.28" barwidth={37}>Pression de la part d’un parent</BarGraph.Row>
+      <BarGraph.Row percentage="2.95" barwidth={33}>J’ai été confronté(e) à trop de harcèlement ou de discrimination</BarGraph.Row>
+      <BarGraph.Row percentage="2.61" barwidth={29}>Je pensais que ma dysphorie s’atténuerait, mais cela n’a pas été le cas</BarGraph.Row>
+      <BarGraph.Row percentage="2.5"  barwidth={28}>Je n’avais pas les moyens de payer les soins de santé ou les autres dépenses liés à la transition</BarGraph.Row>
+      <BarGraph.Row percentage="2.16" barwidth={24}>Pression de la part d’autres membres de ma famille</BarGraph.Row>
+      <BarGraph.Row percentage="1.45" barwidth={16}>Pression de la part de mon conjoint ou partenaire</BarGraph.Row>
+      <BarGraph.Row percentage="1.23" barwidth={14}>Pression de la part d’ami(e)s</BarGraph.Row>
+      <BarGraph.Row percentage="1.23" barwidth={14}>J’ai eu des difficultés à trouver un emploi</BarGraph.Row>
+      <BarGraph.Row percentage="0.82" barwidth={9}>Pression de la part de mon employeur</BarGraph.Row>
+      <BarGraph.Row percentage="0.68" barwidth={8}>Pression de la part d’un conseiller ou d’un responsable religieux</BarGraph.Row>
+      <BarGraph.Row percentage="0.63" barwidth={7}>Raisons médicales</BarGraph.Row>
+      <BarGraph.Row percentage="0.37" barwidth={4}>Pression de la part d’un professionnel de la santé mentale</BarGraph.Row>
+      <BarGraph.Row percentage="0.36" barwidth={4}>J’ai réalisé que la transition de genre n’était pas faite pour moi</BarGraph.Row>
+    </BarGraph>
+    Source: <a href="https://transequality.org/sites/default/files/2025-06/USTS_2022Health%26WellbeingReport_WEB.pdf">Rapport USTS sur la santé et le bien-être</a> p. 52, Table 2.9
+  </Card.Content>
+</Card>
+
+C’est une liste impressionnante, mais je veux que vous portiez votre attention tout en bas : ***seules 0,36 % des personnes ayant entamé une transition ont réalisé que celle-ci ne leur convenait pas.*** Autrement dit, parmi toutes les personnes ayant effectué une « détransition », seules 4 % l’ont fait parce que la transition n’était pas adaptée à leur situation.
+
+233 personnes.
+
+Au total.
+
+Sur près de 65 000 répondants à cette question précise.
+
+Prenez un instant pour réfléchir à ces chiffres ; ils sont stupéfiants. La quasi-totalité des personnes qui entament une détransition ne le font que temporairement. Ce n’est pas qu’elles se sont trompées sur le fait d’être trans ; elles ont simplement besoin d’atteindre une situation de vie plus stable avant de pouvoir reprendre leur transition. D’ailleurs, une étude menée sur dix ans au sein d’une clinique spécialisée dans la transition, au Royaume-Uni, a révélé que, sur 3 000 participants, *seuls trois* vivaient, au bout de dix ans, selon le genre qui leur avait été assigné à la naissance.
+
+Alors, si vous craignez de vous être trompé(e) ? Statistiquement parlant, ce n’est pas le cas. Les personnes qui se trompent réellement sont si rares qu’elles sont, sur le plan statistique, quasi inexistantes.
+
+## D’accord, mais que se passe-t-il si c’est MON cas ? Et si je faisais partie de ces 0,36 % ?
+
+…Eh bien, c’est une remarque légitime. Vous me reprochez de commettre un [sophisme du joueur](https://fr.wikipedia.org/wiki/Erreur_du_parieur) là ; peu importe à quel point il est improbable que vous vous trompiez sur votre identité trans, *c’est votre vie*. Si jamais vous faites partie de cette infime minorité qui s’est trompée, vous méritez que les conséquences de cette situation soient traitées avec respect.
+
+Pour commencer, abordons un point important : je suis scientifique. Mon objectif est de vous transmettre les données les plus fiables dont nous disposons. En réalité, les choses sont simples : pour mener une étude sur le comportement humain et obtenir des résultats fiables, il faut réunir un nombre suffisant de participants. Le problème, c’est que toute étude est ancrée dans un lieu précis ; or, le recrutement des participants — surtout lorsqu’il s’agit de mener des entretiens pour comprendre, de manière systématique, le vécu des individus — se heurte inévitablement à la limite du nombre de personnes disponibles.
+
+Prenons un exemple concret.
+
+Imaginons que vous meniez une étude sur la « détransition » à New York, l’une des plus grandes métropoles au monde, avec une population de 8,5 millions d’habitants susceptibles de se déplacer jusqu’à votre bureau pour un entretien. Si l’on se fie à des [recherches récentes](https://www.hrc.org/press-releases/record-breaking-lgbtq-adults-now-12-of-population-greater-than-10-in-40-of-50-states), environ 2,33 % de la population est transgenre, ce qui représente quelque 198 000 personnes transgenres vivant à New York. Or, avec un taux de « regret » (ou de retour en arrière) de seulement 0,36 %, cela signifie qu’il n’y a, *dans toute l’agglomération new-yorkaise*, que 713 personnes correspondant au profil recherché : des individus ayant entamé une transition avant de réaliser qu’elle ne leur convenait pas et de revenir sur leur décision.
+
+Résultat ? Pour obtenir une étude d’une envergure suffisante — capable de fournir des données exploitables et fiables, reconnues comme valides par la communauté scientifique —, vous devriez recruter entre un tiers et la moitié de toutes les personnes éligibles dans l’ensemble de l’agglomération de l’une des plus grandes villes du monde. Car, il faut le rappeler, les études reposant sur des [échantillons trop restreints produisent des données inexploitables](https://pmc.ncbi.nlm.nih.gov/articles/PMC11379640/).
+
+Et, en tant que chercheur, je peux vous dire ceci : si, pour mener à bien votre étude, vous devez recruter la moitié d’une population régionale entière, cela pose un sérieux problème. *Ça n’arrivera pas.* Point final. Les taux de recrutement sont tout simplement trop faibles.
+
+Tout cela est une manière détournée d’expliquer quelque chose d’assez simple : nous ne disposons pas d’études scientifiques solides sur le vécu des personnes qui, après avoir entamé une transition, reviennent sur leur décision. Il n’y a tout simplement… pas assez de personnes ayant effectué ce parcours inverse.
+
+Il ne nous reste donc que des témoignages.
+
+Vous avez sans doute entendu parler de [Chloe Cole](https://en.wikipedia.org/wiki/Chloe_Cole), qui a gagné [des centaines de milliers de dollars en tant que militante politique anti-trans rémunérée](https://www.erininthemorning.com/p/chloe-cole-testifies-she-makes-up) et personne ayant entamé un processus de « détransition ». Elle a toutes les raisons financières de mentir sur, eh bien, *absolument tout*. Soyez honnête avec vous-même : combien d’absurdités seriez-vous prêt(e) à raconter pour une somme de 200 000 dollars ? C’est une somme qui peut changer une vie.
+
+Même si l’on prend un peu de recul et que l’on accepte tout ce que dit Chloe Cole comme argent comptant, cela ne représente qu’un seul témoignage. Un parmi les près de 8 millions de personnes trans vivant en Amérique. Si vous cherchez un récit catastrophe sur n’importe quel sujet, vous finirez toujours par en trouver un quelque part.
+
+Les êtres humains sont faillibles. Nous commettons des erreurs. C’est précisément cette inquiétude qui vous pousse à lire ces lignes, n’est-ce pas ?
+
+Avant que Chloe Cole ne devienne une figure médiatique, [Ky Schevers](https://en.wikipedia.org/wiki/Ky_Schevers) était la coqueluche du mouvement anti-trans, jouant exactement le même rôle que celui que tient Chloe Cole aujourd’hui. Et savez-vous quoi ? Elle est désormais engagée dans un nouveau processus de transition, [et elle lutte contre les personnes mêmes qui finançaient autrefois son train de vie](https://abcnews.com/US/former-detransitioner-fights-anti-transgender-movement-backed/story?id=92597182).
+
+Il s’avère qu’elle n’avait pas tort, après tout.
+
+Mais je ne souhaite pas me concentrer sur ces noms très médiatisés. Certes, ce sont probablement les histoires dont vous avez entendu parler, mais elles ne sont en rien représentatives. On ne fait pas la une des journaux en étant quelqu’un de « typique ». Le plus beau récit de détransition qu'il m'ait été donné de lire provient sans doute de [Dolphin Diaries](https://bsky.app/profile/dolphindiaries.bsky.social) ; elle a effectué une transition et a vécu en tant qu'homme pendant huit ans avant d'entamer un processus de détransition. Il s'agit d'un texte en deux parties, que vous pouvez consulter [ici](https://dolphindiaries.substack.com/p/how-to-prevent-detransition-in-five) et [ici](https://dolphindiaries.substack.com/p/detransuncis-part-2) — *je vous en supplie, allez le lire* — mais je souhaite mettre en avant quelques passages de ce qu'elle y a écrit.
+
+> …beaucoup de personnes ayant vécu une détransition n'ont pas une vision aussi binaire ou tranchée de leur passé. Certaines sont non-binaires et ne se reconnaissent ni dans l'étiquette « homme » ni dans celle de « femme » ; d'autres ne remettent pas en question la réalité de leur dysphorie de genre ; certaines rejettent même, par principe, le terme « détransitionneur » (ou « détrans »), bien qu'elles aient bel et bien effectué une détransition.
+
+À quoi ressemble donc la détransition ? Eh bien, comme pour toute chose, les situations sont très variées. Il existe des cas extrêmes, très tranchés — ceux qui estiment s'être « trompés » et qui en éprouvent une colère profonde, à l'instar de Chloe Cole… mais, plus fréquemment, on trouve des personnes non-binaires ou des individus ayant renoué avec leur sexe assigné à la naissance — ce que Dolphin Diaries appelle des « uncis » — et qui, somme toute, vivent très bien. C'est une expérience qu'elles ont vécue, et qu'elles ne vivent plus aujourd'hui. C'est tout.
+
+La détransition, comme elle le souligne, est « inévitable » ; au sein de tout groupe suffisamment vaste, il y aura toujours, tôt ou tard, quelqu'un pour faire telle ou telle chose. C'est une simple question de statistiques et de temps.
+
+Prenez un instant pour réfléchir à cela. C'est important.
+
+Certaines personnes feront fausse route, *et ce n’est pas grave*. Même s’il s’agit de vous. Ce ne sera pas la fin de votre histoire. Cela ne gâchera pas votre vie. Au bout du compte, ce ne sera même pas l’aspect le plus important de votre existence. C’est juste… quelque chose que vous avez vécu pendant un certain temps, et maintenant vous passez à autre chose — comme l’immense majorité des personnes « détrans ».
+
+Pour ma part, je suis trans. Je suis chercheur, et mes travaux portent précisément sur la transidentité. Ma transition est la meilleure chose que j’aie jamais entreprise. Et pourtant, ma transidentité *n’est pas* l’élément le plus important de ce que je suis ; ce n’est qu’une facette parmi d’autres. Une facette importante, certes. Mais une parmi tant d’autres.
+
+Alors, pourquoi cette peur si intense de *ce cas précis* — une éventualité statistiquement infime, une probabilité quasi inexistante ? Pourquoi cela vous hante-t-il autant ?
+
+> La « cis-identité » est un régime. Un statu quo… Être « cis », ce n’est pas simplement s’identifier au sexe inscrit sur son acte de naissance — d’ailleurs, qui va encore vérifier ces documents ? C’est vivre en conformité avec son « destin biologique » et avec toutes les normes sociales qui en découlent. Ce destin est assigné à la naissance, certes, mais il ne s’arrête pas là : il vous accompagne tout au long de votre vie.
+>
+> La « cis-identité » n’est pas une identité ; c’est une récompense accordée à ceux qui se plient aux injonctions.
+
+Analysons cela de plus près, car c’est une réflexion extrêmement riche.
+
+Ce que souligne ici « Dolphin Diaries » — une personne ayant entamé un parcours de « détransition » — renvoie aux questions de pouvoir et de privilèges. Vous savez bien que les personnes trans sont souvent malmenées au sein de notre société, tout comme le sont les personnes noires, les musulmans, les juifs, les femmes, ou encore…
+
+La liste pourrait continuer. Vous savez comment les choses fonctionnent, même si vous préférez détourner le regard parce que cette réalité vous met mal à l’aise. Ceux qui occupent les positions dominantes ont tendance à s’en prendre à ceux qui sont en position inférieure ; or, entamer une transition vous place plus bas dans la hiérarchie sociale, ce qui signifie que davantage de personnes se sentiront autorisées à vous rabaisser ou à vous attaquer. Mais tout cela signifie que, si vous ressentez ce qu’elle ressent — si le cœur de votre peur, celle de faire une erreur, concerne en réalité votre place dans le monde, votre sentiment d’appartenance ? Et tout ce discours alarmiste sur les « effets irréversibles » ? Ce n’est qu’un tour de passe-passe. Sur le plan biologique, rien n’est véritablement irréversible. Pour chaque intervention chirurgicale ou traitement hormonal qui vous oriente dans une direction, il existe une procédure équivalente pour vous ramener dans l’autre, si nécessaire. Vous avez eu recours à une vaginoplastie — pour prendre l’exemple sans doute le plus extrême — et vous réalisez que c’était une erreur ? Eh bien, sachez que les phalloplasties ont été initialement conçues pour des hommes cisgenres ayant perdu leurs organes génitaux à la suite d’un accident, et vice versa.
+
+Il est possible de corriger la situation. Vous pouvez, à tous égards, retrouver votre état actuel.
+
+*Alors, si la peur qui vous tenaille ne porte pas réellement sur les effets de la transition — puisque tout est réversible, moyennant les efforts nécessaires —, de quoi avez-vous peur, au juste ?*
+
+> Si la transition était simple, bien connue et gratuite, il est certain que davantage de personnes choisiraient la détransition. Mais cela ne signifierait pas grand-chose. Car ces personnes seraient comme n’importe qui d’autre. Leurs corps — des corps transsexuels — resteraient les mêmes, tout aussi dignes. Ils seraient réels.
+
+<Gutter>
+  <TwitterEmbed >
+    <Tweet
+      id="1201138482569195526"
+      href="https://twitter.com/Emmy_Zje/status/1201138482569195526"
+      username="Emmy_Zje"
+      displayName="Dr. Emmy Zje"
+      avatar="/twitter/avatars/Emmy_Zje.jpg"
+      date="2019-12-01T13:58:24.000Z"
+    >
+      <Tweet.Body>
+        La culpabilité est un sous-produit de la honte ; la honte est un sous-produit de la transphobie ; et la transphobie est un sous-produit de mensonges fondés sur la peur. 
+
+        Une fois que l’on prend conscience de cela, on peut commencer à percevoir ce qui est « trans » pour ce qu’il est réellement : une magnifique manifestation de la nature. Un don à chérir, et non une malédiction à dissimuler.
+      </Tweet.Body>
+    </Tweet>  
+  </TwitterEmbed>
+</Gutter>
+La peur porte sur le fait d’être *réel*, d’être légitime, d’être traité sur un pied d’égalité dans une société profondément inégalitaire. Il s’agit d’être respecté dans son genre, dans sa vie. Ce n’est pas la peur d’avoir tort, *mais celle des conséquences d’avoir tort* : celle de devoir, après avoir entamé une transition, vivre avec le regard des autres qui change, et celle de devoir faire marche arrière. Vous avez peur du regard des autres, peur de ne plus être traité comme une personne cisgenre.
+
+Et oui, vous avez raison. Ce ne sera plus le cas.
+
+Cela me rappelle [une intervention très connue de la chercheuse et militante Jane Elliott, il y a bien des années](https://www.youtube.com/shorts/M7w17iZDiRY), où elle a demandé à une salle remplie de personnes blanches de se lever si elles accepteraient d’être traitées comme la société traite les personnes noires. Et devinez quoi ? Personne ne s’est levé.
+
+Personne.
+
+Pour reprendre ses mots : « Vous savez ce qui se passe, et vous ne voulez pas que cela vous arrive. Alors, pourquoi acceptez-vous, ou permettez-vous, que cela arrive aux autres ? »
+
+C’est une chose que personne n’exprime vraiment, et je pense que vous avez le droit de l’entendre : vos peurs sont rationnelles, même si vous vous racontez qu’elles portent sur autre chose — ce qui n’est pas vraiment le cas. Pour la plupart des gens, la peur d’avoir fait une erreur et de devoir « détransitionner » n’est qu’une excuse commode, un argument tout trouvé. La vie des personnes trans *est* plus difficile que celle des personnes cisgenres. Et oui, cela inclut aussi les personnes qui effectuent une « détransition ».
+
+Mais la réalité est la suivante : si vous êtes trans, cela relève, pour l’essentiel, de la génétique. Rester dans le placard ne changera rien à ce fait ; cela signifie que votre vie est déjà plus difficile parce que vous êtes trans, qu’elle *a toujours été* plus difficile parce que vous êtes trans, et qu’elle *continuera* à être plus difficile parce que vous êtes trans.
+
+C’est un fait, c’est ainsi. Alors, qu’est-ce que tu comptes faire, au juste, à ce sujet ?
+
+## ...mais qu’est-ce que je vais bien pouvoir faire face à tout ça ?
+
+Je peux te proposer des réponses qui ont l’air simples.
+
+- Entreprends une transition ! Ce n’est pas un bloc unique et massif ; c’est une multitude de petits choix. Et si l’un d’eux s’avère être une erreur, tu peux toujours faire marche arrière.
+
+- Entoure-toi de personnes qui ne te traiteront pas plus mal parce que tu es trans, ou parce que tu explores la possibilité d’une transition ! Que tu aies raison ou tort, ce sont les meilleures personnes qui soient : des gens auprès de qui tu peux vraiment être toi-même, peu importe qui tu finiras par devenir.
+
+Ces deux affirmations sont vraies. Statistiquement parlant, elles sont objectivement exactes. Même si une transition est un projet colossal — et, qui plus est, coûteux. Même si « trouver un meilleur entourage » implique parfois de laisser partir des proches qui, de fait, sortent de ta vie. Même s’il s’agit de membres de ta famille. Se détacher de personnes qui ne t’aimaient qu’à [certaines conditions](https://en.wikipedia.org/wiki/Conditional_love), c’est une épreuve aussi douloureuse que de réaliser, tout simplement, que leur amour était conditionnel dès le départ.
+
+Alors, oui, ça a l’air simple, mais ça ne l’est pas.
+
+Tu connais les chiffres ; tu sais à quel point il est peu probable que tu sois là, en train de lire ceci, tout en faisant fausse route. Au fond de toi, tu sais aussi que personne — transition ou non — ne peut mener une vie totalement exempte de regrets. Il est donc fondamentalement injuste, de ta part, de t’imposer l’exigence de ne jamais rien regretter. Tu as le droit d’explorer des pistes audacieuses, voire étranges ; le droit de te tromper parfois ; le droit de porter en toi quelques regrets, mais aussi des anecdotes mémorables à raconter en soirée pour le restant de tes jours — *quels que soient les résultats de tes choix*.
+
+Tout cela est objectivement vrai. Pourtant, il manque l’essentiel, ce dernier point qu’il me semble important que tu entendes dans tout ce cheminement.
+
+Ne pas faire de choix, c’est déjà un choix.
+
+Rester « dans le placard » en espérant que tout cela finisse par disparaître entraîne des conséquences physiques et psychologiques durables, qui réduiront, de manière mesurable, tant la durée que la qualité de ta vie. Et, plus important encore ? Posez la question à une centaine de personnes trans : quel est leur plus grand regret concernant leur transition ? 99 d’entre elles vous répondront la même chose : « Ne pas avoir commencé ma transition plus tôt. »
+
+Et s’il vous plaît, si vous ne devez consulter qu’un seul lien dans tout ce texte, [consultez celui-ci](https://web.archive.org/web/20241004153041/https://www.reddit.com/r/asktransgender/comments/88t6sg/some_tips_from_a_58_years_old_dying_trans_woman/). Vraiment. *S’il vous plaît*. Je ne vous en dévoilerai pas le contenu, mais sachez que vous allez pleurer.
+
+Quoi que vous choisissiez, vous aurez des regrets. C’est inévitable ; c’est ainsi que va la vie. Tenter de les éviter ne fera qu’empirer les choses, *peu importe ce que vous faites*. Alors, plutôt que de chercher à échapper au regret — ce qui est impossible —, posez-vous une question plus pertinente, plus fondamentale :
+
+Quel genre de vie souhaitez-vous mener ?
+
+Car rien ne se produira si vous ne tentez jamais rien. Et vous ne pouvez pas vous consumer pour réchauffer les autres ; cela ne mènera qu’à votre propre destruction, sans pour autant empêcher les autres d’avoir froid. Alors, avec quels regrets pouvez-vous vivre ? Celui d’avoir entrepris une démarche importante pour améliorer votre existence, même si, au bout du compte, cela n’a pas abouti comme espéré ?
+
+Ou bien le regret de n’avoir jamais vraiment vécu votre propre vie ?
+
+<TwitterEmbed>
+  <Tweet
+    id="1062331991662755840"
+    href="https://twitter.com/MagsVisaggs/status/1062331991662755840"
+    username="MagsVisaggs"
+    displayName="Magdalene Visaggio 🏳️‍🌈🏳️‍⚧️"
+    avatar="/twitter/avatars/MagsVisaggs.jpg"
+    date="2018-11-13T13:10:58.000Z"
+  >
+    <Tweet.Body>
+      Être trans comporte son lot de choses pénibles. Mais savez-vous ce qui est génial ? Nous avons la possibilité de choisir — de la manière la plus profonde qui soit — qui nous sommes et comment nous souhaitons interagir avec le monde. Nous nous disséquons, nous nous décomposons, puis nous nous reconstruisons. Nous menons nos vies, en toute conscience, selon des modalités qui échappent souvent au regard des autres. 
+
+      C’est une chose pour laquelle j’éprouve une immense gratitude. Et même s’il est frustrant de constater que je parlerai toujours « en tant que femme » avec un certain accent, je sais à quel point je me suis battue pour en arriver là, tout ce que j’ai dû sacrifier, et à quel point tout cela en valait la peine. 
+
+      Chaque jour, je peux me regarder dans le miroir et m’émerveiller devant la femme que je suis devenue.
+    </Tweet.Body>
+  </Tweet>
+</TwitterEmbed>
