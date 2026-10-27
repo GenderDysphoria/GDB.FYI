@@ -10,3 +10,4 @@ export { default as TwitterEmbed } from './components/TwitterEmbed.js';
 export { default as Text } from './components/Text.js';
 export { default as Grid } from './components/Grid/Grid.js';
 export { default as Stack } from './components/Stack/Stack.js';
+export { default as Embed } from './components/Embed.js';
