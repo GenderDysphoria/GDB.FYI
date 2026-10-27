@@ -2,10 +2,12 @@
 .ui-paper {
   --paper-shape: 0;
 
+  display: block;
   background-color: var(--background-paper);
   color: var(--text-primary);
   transition: box-shadow var(--transition-duration-standard) var(--transition-ease-in-out);
   border-radius: var(--paper-shape);
+  text-decoration: inherit;
 
   &:not(.ui-paper--square) {
     border-radius: var(--shape-border-radius);

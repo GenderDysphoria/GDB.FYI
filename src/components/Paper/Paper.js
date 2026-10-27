@@ -2,7 +2,8 @@ import clsx from 'clsx';
 
 const CssPrefix = 'ui-paper';
 export default function Paper ({
-  component: Component = 'div',
+  href,
+  component: Component = (href ? 'a' : 'div'),
   size = 'md',
   outlined,
   elevation = 0,
@@ -32,5 +33,5 @@ export default function Paper ({
         }),
       }
     : style;
-  return <Component {...props} style={style} className={classes} />;
+  return <Component {...props} href={href} style={style} className={classes} />;
 }
