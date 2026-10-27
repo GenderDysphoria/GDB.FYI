@@ -43,6 +43,7 @@
   &.ui-text--color-warning   { color: var(--text-color-warning); }
   &.ui-text--color-danger    { color: var(--text-color-danger); }
   &.ui-text--color-muted     { color: var(--text-color-muted); }
+  &.ui-text--color-link      { color: var(--text-color-anchor); }
 
   &.ui-text--truncate {
     overflow: hidden;
