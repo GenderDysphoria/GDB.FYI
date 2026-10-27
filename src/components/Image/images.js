@@ -6,7 +6,7 @@ import sharp from 'sharp';
 import { file as fileOperation, hfile } from '#gen/cache';
 import { resolve, resolveDist, resolvePublic } from '#gen/config';
 
-const WIDTHS = [ 1920, 1366, 768, 640 ];
+const WIDTHS = [ 1920, 1366, 768, 640, 320 ];
 
 export async function getDimensions (source) {
   const relPath = resolvePublic(source);

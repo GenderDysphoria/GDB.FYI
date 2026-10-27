@@ -11,6 +11,7 @@ export default async function Image ({
   srcSizes,
   className,
   external,
+  loading = titlecard ? 'eager' : 'lazy',
   ...props
 }) {
   const classes = clsx(
@@ -36,9 +37,10 @@ export default async function Image ({
 
   const img = (
     <img
-      sizes={sizes.join(', ')}
+      sizes={titlecard ? sizes : 'auto'}
       srcSet={srcsets.join(', ')}
       src={full.url}
+      loading={loading}
       {...props}
       className={classes}
     />
