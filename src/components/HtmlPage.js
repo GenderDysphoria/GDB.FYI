@@ -16,7 +16,8 @@ export default async function HtmlPage ({
   let titlecard = metadata.image || this.lang.image;
   if (titlecard) {
     const [ files, promises ] = await computeSrc(titlecard);
-    titlecard = new URL(files.at(-1).url, canonical).href;
+    titlecard = files.at(-1);
+    titlecard.href = new URL(titlecard.url, canonical).href;
     await Promise.all(promises);
   }
   return (
@@ -45,13 +46,18 @@ export default async function HtmlPage ({
           )}
           {titlecard && (
             <>
-              <meta property="og:image" content={titlecard} />
-              <meta property="twitter:image" content={titlecard} />
+              <meta property="og:image" content={titlecard.href} />
+              <meta property="og:image:width" content={titlecard.width} />
+              <meta property="og:image:height" content={titlecard.height} />
+              <meta property="twitter:image" content={titlecard.href} />
+              <meta property="twitter:image:width" content={titlecard.width} />
+              <meta property="twitter:image:height" content={titlecard.height} />
             </>
           )}
           <meta property="og:url" content={canonical} />
           <meta property="twitter:url" content={canonical} />
           <link rel="canonical" href={canonical} />
+          <meta name="theme-color" content="#fc0a7e" />
           <meta name="fediverse:creator" content="twipped@twipped.social" />
 
           {/* <!-- generics --> */}
