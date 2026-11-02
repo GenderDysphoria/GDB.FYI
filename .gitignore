@@ -6,3 +6,4 @@ node_modules
 /aws.js
 /.awspublish-*
 /public/*/*.pdf
+/public/gdb.zip
