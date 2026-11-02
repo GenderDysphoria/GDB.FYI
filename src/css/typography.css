@@ -101,7 +101,8 @@ html[lang=de], html[lang=pl], html[lang=hu], html[lang=fr] {
 }
 
 html[lang=ko] {
-  --font-family-primary: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-family-primary: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, 'Malgun Gothic', sans-serif;
+  --font-family-secondary: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, 'Malgun Gothic', sans-serif;
 }
 
 html[lang=tw], html[lang=zh] {

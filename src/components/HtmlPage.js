@@ -100,6 +100,11 @@ export default async function HtmlPage ({
               <link href="//fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&family=Noto+Sans+SC:wght@100..900&family=Noto+Serif+TC:wght@200..900" rel="stylesheet" />
             </>
           )}
+          {(lang === 'ko') && (
+            <>
+              <link rel="stylesheet" as="style" crossorigin href="//cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+            </>
+          )}
           <link rel="stylesheet" href={`/static/${BUILD_HASH}/bundle.css`} type="text/css" />
           {head}
           <ScriptAsset src="i.js" data-i-url={IS_PROD ? 't.genderdysphoria.fyi/i' : '/i'} />
