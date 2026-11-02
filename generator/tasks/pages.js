@@ -237,6 +237,11 @@ async function renderPageBody (page, options = {}) {
   try {
     const { Page: PageBody } = page;
     const lang = manifest.languages[page.lang];
+
+    if (!lang) {
+      throw new Error(`Could not find language entry for "${page.lang}".`);
+    }
+
     const Pw = page.wrapper || PageWrapper;
     page.body = await render(
       <Pw

@@ -1,22 +1,21 @@
+import transliterate from '@sindresorhus/transliterate';
 import clsx from 'clsx';
 import { slug } from 'github-slugger';
 
 import SvgIcon from '#src/components/SvgIcon';
 
-function getAnchor (text) {
-  if (typeof text !== 'string') return null;
-  return slug(text);
-}
-
 const CssPrefix = 'ui-header';
 
 function createHeading (BaseComponent, name = BaseComponent.toUpperCase()) {
-  const Heading = ({
+  function Heading ({
     component: Component = BaseComponent,
     className,
     ...props
-  }) => {
-    const anchor = getAnchor(props.children);
+  }) {
+    let anchor;
+    if (typeof props.children === 'string') {
+      anchor = transliterate(slug(props.children), { locale: this.lang.lang });
+    }
     const link = `#${anchor}`;
 
     const classes = clsx(
@@ -32,7 +31,7 @@ function createHeading (BaseComponent, name = BaseComponent.toUpperCase()) {
         </a>
       </Component>
     );
-  };
+  }
   Heading.displayName = name;
   return Heading;
 }
