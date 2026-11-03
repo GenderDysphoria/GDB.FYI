@@ -2,8 +2,8 @@ export default {
   lang: 'ko',
 
   // these two should be updated any time a translation is made current
-  version: '1.0.0',
-  since: '2026-10-05',
+  version: '2.0.0',
+  since: '2026-11-03',
 
   name: '한국어 (KO)',
   menuName: '한국어 (Korean)',
