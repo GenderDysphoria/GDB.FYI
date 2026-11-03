@@ -22,7 +22,7 @@ export default {
     '/ko/존재적-불쾌감',              // '/en/existential-dysphoria',
     '/ko/관리되는-불쾌감',             // '/en/managed-dysphoria',
     '/ko/가면-증후군',               // '/en/impostor-syndrome',
-    '/ko/제가-트랜스젠더일까요',        // '/en/am-i-trans',
+    '/ko/제가-트랜스젠더-당사자일까요',        // '/en/am-i-trans',
     '/ko/진단',                   // '/en/diagnoses',
     '/ko/치료',                   // '/en/treatment',
     '/ko/원인',                   // '/en/causes',

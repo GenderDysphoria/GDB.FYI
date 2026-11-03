@@ -15,7 +15,7 @@ const pages = (await Promise.all([
   import('./존재적-불쾌감.mdx'),
   import('./관리되는-불쾌감.mdx'),
   import('./가면-증후군.mdx'),
-  import('./제가-트랜스젠더일까요.mdx'),
+  import('./제가-트랜스젠더-당사자일까요.mdx'),
   import('./진단.mdx'),
   import('./치료.mdx'),
   import('./원인.mdx'),
