@@ -30,31 +30,31 @@ export const meta = {
 우선, 트랜스젠더 당사자를 대상으로 실시된 역대 최대 규모의 조사인 [2022 미국 트랜스젠더 설문조사](https://ustranssurvey.org/)를 살펴보겠습니다. 이 설문조사에서는 92,000명의 트랜스젠더 당사자가 참여하였고, 결과는 상당히 압도적입니다. 트랜지션한 모두의 97%가 자신의 삶이 트랜지션 이전과 비교하였을 때 동일하게 좋거나 더 나아졌다고 응답했습니다. *모든 측면*을 고려하였을 때 말입니다. 예를 들어 어떤 사람이 교통사고를 당해 앞으로 만성 통증을 겪게 되었다고 해봅시다. 그 사고가 트랜지션과 전혀 관계가 없더라도, 삶이 악화되었다고 응답한 3%에 포함되게 되는 것입니다.
 
 <Card>
-  <Card.Header>Life Satisfaction Since Transitioning Gender</Card.Header>
+  <Card.Header>젠더 트랜지션 이후 삶의 만족도</Card.Header>
   <Card.Content>
     <BarGraph>
-      <BarGraph.Row percentage={79}>A Lot More Satisfied</BarGraph.Row>
-      <BarGraph.Row percentage={15}>A Little More Satisfied</BarGraph.Row>
-      <BarGraph.Row percentage={3}>Neither More Nor Less Satisfied</BarGraph.Row>
-      <BarGraph.Row percentage={1}>A Little Less Satisfied</BarGraph.Row>
-      <BarGraph.Row percentage={2}>A Lot Less Satisfied</BarGraph.Row>
+      <BarGraph.Row percentage={79}>훨씬 더 만족한다</BarGraph.Row>
+      <BarGraph.Row percentage={15}>조금 더 만족한다</BarGraph.Row>
+      <BarGraph.Row percentage={3}>만족도에 변화가 없다</BarGraph.Row>
+      <BarGraph.Row percentage={1}>조금 덜 만족한다</BarGraph.Row>
+      <BarGraph.Row percentage={2}>훨씬 덜 만족한다</BarGraph.Row>
     </BarGraph>
-    Source: <a href="https://transequality.org/sites/default/files/2024-02/2022%20USTS%20Early%20Insights%20Report_FINAL.pdf">2022 USTS Early Insights Report</a> pg 17
+    출처: <a href="https://transequality.org/sites/default/files/2024-02/2022%20USTS%20Early%20Insights%20Report_FINAL.pdf">2022 미국 트랜스젠더 설문조사 초기 결과 보고서<sup>(2022 USTS Early Insights Report)</sup></a> 페이지 17
   </Card.Content>
 </Card>
 
 호르몬 대체 요법<sup>(hormone replacement therapy)</sup>과 젠더 확정 수술에 관한 수치를 살펴보면 그 차이는 더욱 극명합니다. 만족도가 조금이라도 낮아졌다는 사람이 호르몬 대체 요법을 시작한 사람들 전체의 ***1퍼센트보다 적은 겁니다***.
 
 <Card>
-  <Card.Header>Life Satisfaction With Receiving Hormone Treatment</Card.Header>
+  <Card.Header>호르몬 치료를 받으면서의 삶의 만족도</Card.Header>
   <Card.Content>
     <BarGraph>
-      <BarGraph.Row percentage={84}>A Lot More Satisfied</BarGraph.Row>
-      <BarGraph.Row percentage={14}>A Little More Satisfied</BarGraph.Row>
-      <BarGraph.Row percentage={1}>Neither More Nor Less Satisfied</BarGraph.Row>
-      <BarGraph.Row percentage={1}>A Little or A Lot Less Satisfied</BarGraph.Row>
+      <BarGraph.Row percentage={84}>훨씬 더 만족한다</BarGraph.Row>
+      <BarGraph.Row percentage={14}>조금 더 만족한다</BarGraph.Row>
+      <BarGraph.Row percentage={1}>만족도에 변화가 없다</BarGraph.Row>
+      <BarGraph.Row percentage={1}>조금 또는 훨씬 덜 만족한다</BarGraph.Row>
     </BarGraph>
-    Source: <a href="https://transequality.org/sites/default/files/2024-02/2022%20USTS%20Early%20Insights%20Report_FINAL.pdf">2022 USTS Early Insights Report</a> pg 18
+    출처: <a href="https://transequality.org/sites/default/files/2024-02/2022%20USTS%20Early%20Insights%20Report_FINAL.pdf">2022 미국 트랜스젠더 설문조사 초기 결과 보고서 <sup>(2022 USTS Early Insights Report)</sup></a> 페이지 18
   </Card.Content>
 </Card>
 
@@ -76,7 +76,7 @@ export const meta = {
     - More than one in ten (11%) respondents who had ever held a job said they had been fired, forced to resign, lost the job, or been laid off because of their gender identity or expression.
     - Nearly one-third (30%) of respondents had experienced homelessness in their lifetime.
 
-    Source: <a href="https://transequality.org/sites/default/files/2024-02/2022%20USTS%20Early%20Insights%20Report_FINAL.pdf">2022 USTS Early Insights Report</a> pg 21
+    출처: <a href="https://transequality.org/sites/default/files/2024-02/2022%20USTS%20Early%20Insights%20Report_FINAL.pdf">2022 미국 트랜스젠더 설문조사 초기 결과 보고서 <sup>(2022 USTS Early Insights Report)</sup></a> 페이지 18
   </Card.Content>
 </Card>
 
@@ -105,27 +105,27 @@ export const meta = {
 
 <Card>
   <Card.Header>
-    <strong>Reasons for Living in Respondents' Sex Assigned At Birth (SAAB) at Least for a Little While</strong>
+    <strong>응답자들이 적어도 일정 기간 동안 출생 시 지정된 성별<sup>(sex assigned at birth, SAAB)</sup>로 다시 생활한 이유</strong>
     <small style="display: block">Bar width indicates the portion of the 9% who detransitioned, figures represent percentage of all respondents.</small>
   </Card.Header>
   <Card.Content>
     <BarGraph>
-      <BarGraph.Row percentage="3.69" barwidth={41}>It was just too hard for me to be trans in my community</BarGraph.Row>
-      <BarGraph.Row percentage="3.28" barwidth={37}>Pressure from a parent </BarGraph.Row>
-      <BarGraph.Row percentage="2.95" barwidth={33}>I faced too much harassment/discrimination</BarGraph.Row>
-      <BarGraph.Row percentage="2.61" barwidth={29}>I thought my dysphoria would get better, but it did not</BarGraph.Row>
-      <BarGraph.Row percentage="2.5"  barwidth={28}>I couldn't afford transition-related healthcare or other transition-related expenses</BarGraph.Row>
-      <BarGraph.Row percentage="2.16" barwidth={24}>Pressure from other family members</BarGraph.Row>
-      <BarGraph.Row percentage="1.45" barwidth={16}>Pressure from spouse or partner</BarGraph.Row>
-      <BarGraph.Row percentage="1.23" barwidth={14}>Pressure from friends</BarGraph.Row>
-      <BarGraph.Row percentage="1.23" barwidth={14}>I had trouble getting a job</BarGraph.Row>
-      <BarGraph.Row percentage="0.82" barwidth={9}>Pressure from my employer</BarGraph.Row>
-      <BarGraph.Row percentage="0.68" barwidth={8}>Pressure from a religious counselor or leader</BarGraph.Row>
-      <BarGraph.Row percentage="0.63" barwidth={7}>Medical reasons</BarGraph.Row>
-      <BarGraph.Row percentage="0.37" barwidth={4}>Pressure from a mental health professional</BarGraph.Row>
-      <BarGraph.Row percentage="0.36" barwidth={4}>I realized that gender transition was not for me</BarGraph.Row>
+      <BarGraph.Row percentage="3.69" barwidth={41}>지역사회에서 트랜스젠더로 살아가는 것이 너무 힘들어서</BarGraph.Row>
+      <BarGraph.Row percentage="3.28" barwidth={37}>부모의 압력 때문에</BarGraph.Row>
+      <BarGraph.Row percentage="2.95" barwidth={33}>너무 많은 괴롭힘이나 차별을 겪어서</BarGraph.Row>
+      <BarGraph.Row percentage="2.61" barwidth={29}>너무 많은 괴롭힘이나 차별을 겪어서</BarGraph.Row>
+      <BarGraph.Row percentage="2.5"  barwidth={28}>트랜지션 관련 의료 서비스 이용이나 의료 비용을 감당할 수 없어서 </BarGraph.Row>
+      <BarGraph.Row percentage="2.16" barwidth={24}>다른 가족 구성원들의 압력 때문에</BarGraph.Row>
+      <BarGraph.Row percentage="1.45" barwidth={16}>배우자나 파트너의 압력 때문에</BarGraph.Row>
+      <BarGraph.Row percentage="1.23" barwidth={14}>친구들의 압력 때문에</BarGraph.Row>
+      <BarGraph.Row percentage="1.23" barwidth={14}>취업에 어려움을 겪어서</BarGraph.Row>
+      <BarGraph.Row percentage="0.82" barwidth={9}>고용주의 압력 때문에</BarGraph.Row>
+      <BarGraph.Row percentage="0.68" barwidth={8}>종교 상담가나 종교 지도자의 압력 때문에</BarGraph.Row>
+      <BarGraph.Row percentage="0.63" barwidth={7}>의학적 이유 때문에</BarGraph.Row>
+      <BarGraph.Row percentage="0.37" barwidth={4}>정신건강 전문가의 압력 때문에</BarGraph.Row>
+      <BarGraph.Row percentage="0.36" barwidth={4}>트랜지션이 자신에게 맞지 않는다는 것을 깨달아서</BarGraph.Row>
     </BarGraph>
-    Source: <a href="https://transequality.org/sites/default/files/2025-06/USTS_2022Health%26WellbeingReport_WEB.pdf">USTS Health & Wellbeing Report</a> pg 52, Table 2.9
+    출처: <a href="https://transequality.org/sites/default/files/2025-06/USTS_2022Health%26WellbeingReport_WEB.pdf">미국 트랜스젠더 건강 및 웰빙 보고서<sup>USTS Health & Wellbeing Report</sup></a> 페이지 52, 표 2.9
   </Card.Content>
 </Card>
 
