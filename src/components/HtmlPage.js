@@ -102,7 +102,7 @@ export default async function HtmlPage ({
           )}
           {(lang === 'ko') && (
             <>
-              <link rel="stylesheet" as="style" crossorigin href="//cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+              <link href="//fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900" rel="stylesheet" />
             </>
           )}
           <link rel="stylesheet" href={`/static/${BUILD_HASH}/bundle.css`} type="text/css" />
