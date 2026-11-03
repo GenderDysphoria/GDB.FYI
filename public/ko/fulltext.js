@@ -30,7 +30,7 @@ const pages = (await Promise.all([
 export const meta = {
   key: 'fulltext',
   title: '젠더 불쾌감 바이블',
-  description: '젠더 불쾌감이 나타나게 되는 수많은 방식과 트랜스젠더인 것이 어떤 의미인지에 대한 탐구.',
+  description: '젠더 불쾌감이 나타나게 되는 수많은 방식과 트랜스젠더 당사자인 것이 어떤 의미인지에 대한 탐구.',
   url: '/ko/fulltext',
   image: '/ko/images/titlecard.png',
 };
