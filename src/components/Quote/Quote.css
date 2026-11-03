@@ -36,4 +36,8 @@
   p:last-child {
     margin-block-end: 0;
   }
+
+  ol, ul {
+    padding-inline-start: 2ch;
+  }
 }
