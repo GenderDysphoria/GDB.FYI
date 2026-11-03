@@ -30,7 +30,7 @@ export default {
     '/ko/호르몬',                  // '/en/hormones',
     '/ko/이차-사춘기-남',             // '/en/second-puberty-masc',
     '/ko/이차-사춘기-여',             // '/en/second-puberty-fem',
-    '/ko/regrets',                   // '/en/regrets',
+    '/ko/후회',                   // '/en/regrets',
     '/ko/결론',                    // '/en/conclusion',
   ],
   messages: {

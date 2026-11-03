@@ -23,7 +23,7 @@ const pages = (await Promise.all([
   import('./호르몬.mdx'),
   import('./이차-사춘기-남.mdx'),
   import('./이차-사춘기-여.mdx'),
-  import('./regrets.mdx'),
+  import('./후회.mdx'),
   import('./결론.mdx'),
 ])).map(({ default: Page }) => <Page components={headingComponents} />);
 
