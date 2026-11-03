@@ -128,5 +128,11 @@ export default {
       ],
       aliases: [ 'terfs' ],
     },
+    phenotype: {
+      description: 'The observable characteristics or traits of an organism that are produced by the interaction of the genotype and the environment.',
+    },
+    genotype: {
+      description: 'The genetic structure of a particular organism or a group of organisms.',
+    },
   },
 };
