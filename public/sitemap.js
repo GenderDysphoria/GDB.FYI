@@ -1,4 +1,4 @@
-import { Fragment, RawHtml } from 'essex';
+import { RawHtml } from 'essex';
 
 export const meta = {
   title: 'GDB Privacy Policy',

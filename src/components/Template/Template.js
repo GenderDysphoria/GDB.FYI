@@ -96,7 +96,7 @@ function Navigation () {
         </Button>
         <Paper component="ul" className={`${CssPrefix}-languages`} elevation={5} surface={1}>
           {Object.values(languages).map((l) => (
-            <li><a href={l.keyed[key]?.url ?? l.pages[0].url}>{l.menuName}</a></li>
+            <li key={l.lang}><a href={l.keyed[key]?.url ?? l.pages[0].url}>{l.menuName}</a></li>
           ))}
         </Paper>
       </div>

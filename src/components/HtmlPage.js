@@ -1,4 +1,4 @@
-import { Fragment, RawHtml, Priority } from 'essex';
+import { RawHtml, Priority } from 'essex';
 
 import { IS_PROD } from '#gen/config';
 import { computeSrc } from '#src/components/Image/images';
@@ -21,7 +21,7 @@ export default async function HtmlPage ({
     await Promise.all(promises);
   }
   return (
-    <Fragment>
+    <>
       <RawHtml>{'<!DOCTYPE html>'}</RawHtml>
       <html lang={lang} dir={metadata.rtl ? 'rtl' : 'ltr'}>
         <head {...{ [Priority]: -1 }}>
@@ -114,6 +114,6 @@ export default async function HtmlPage ({
           <noscript><img src={(IS_PROD ? 't.genderdysphoria.fyi/i' : '/i') +  '?stage=noscript'} style="display: none" /></noscript>
         </body>
       </html>
-    </Fragment>
+    </>
   );
 }

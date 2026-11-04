@@ -8,6 +8,9 @@ export default defineConfig([
       '!public/static/**/*.js',
     ],
     extends: [ node ],
+    rules: {
+      '@eslint-react/no-missing-key': 'off',
+    },
   },
   {
     files: [ 'public/static/**/*.js' ],

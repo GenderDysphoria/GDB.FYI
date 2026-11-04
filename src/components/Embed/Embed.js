@@ -2,8 +2,6 @@ import clsx from 'clsx';
 
 import { computeSrc } from '#src/components/Image/images';
 import Paper from '#src/components/Paper';
-import Stack from '#src/components/Stack';
-import Text from '#src/components/Text';
 
 const CssPrefix = 'ui-embed';
 export default async function Embed ({
