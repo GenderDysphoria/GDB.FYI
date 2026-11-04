@@ -39,11 +39,11 @@ export default {
 
     FOOTER_PATREON: '이 웹사이트는 공동체의 기여 덕분에 만들어질 수 있었습니다. 이 웹사이트가 귀중한 가치가 되었다면, <a>Patreon에서 후원</a>하거나 <b>Ko-fi를 통해 기부</b>하는 것을 고려해 보세요.',
     FOOTER_COPYRIGHT: '이 사이트 텍스트와 웹사이트 코드, 원본 그래픽은 <a>CC BY-NC-SA 라이선스를 사용합니다.</a>',
-    FOOTER_COPYRIGHT2: 'Twipped Media and Other Contributors',
-    FOOTER_PRIVACY_POLICY: 'Privacy Policy',
-    FULL_TEXT: 'View Full Text',
-    PDF_DOWNLOAD: 'Download PDF',
-    TRANSLATION_OUTDATED: 'This translation is not up to date. If you would like to <a>help update it</a>, see GitHub for a <c>list of significant changes to the english version</c> since the last update to <b>this translation</b>.',
+    FOOTER_COPYRIGHT2: 'Twipped Media 및 기타 기여자들',
+    FOOTER_PRIVACY_POLICY: '개인정보 처리방침',
+    FULL_TEXT: '전체 텍스트 보기',
+    PDF_DOWNLOAD: 'PDF 다운로드',
+    TRANSLATION_OUTDATED: '이 번역은 최신 상태가 아닙니다. 번역 업데이트를 돕고 싶으시다면, <b>이 번역</b>이 마지막으로 업데이트된 이후 영어 원문에 발생한 <c>주요 변경 사항 목록</c>을 GitHub에서 확인해 주시기 바랍니다.',
   },
   glossary: {
     agab: {
