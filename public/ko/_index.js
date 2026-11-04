@@ -2,8 +2,8 @@ export default {
   lang: 'ko',
 
   // these two should be updated any time a translation is made current
-  version: '1.0.0',
-  since: '2026-10-05',
+  version: '2.0.0',
+  since: '2026-11-03',
 
   name: '한국어 (KO)',
   menuName: '한국어 (Korean)',
@@ -22,7 +22,7 @@ export default {
     '/ko/존재적-불쾌감',              // '/en/existential-dysphoria',
     '/ko/관리되는-불쾌감',             // '/en/managed-dysphoria',
     '/ko/가면-증후군',               // '/en/impostor-syndrome',
-    '/ko/제가-트랜스젠더일까요',        // '/en/am-i-trans',
+    '/ko/제가-트랜스젠더-당사자일까요',        // '/en/am-i-trans',
     '/ko/진단',                   // '/en/diagnoses',
     '/ko/치료',                   // '/en/treatment',
     '/ko/원인',                   // '/en/causes',
@@ -30,12 +30,12 @@ export default {
     '/ko/호르몬',                  // '/en/hormones',
     '/ko/이차-사춘기-남',             // '/en/second-puberty-masc',
     '/ko/이차-사춘기-여',             // '/en/second-puberty-fem',
-    '/ko/regrets',                   // '/en/regrets',
+    '/ko/후회',                   // '/en/regrets',
     '/ko/결론',                    // '/en/conclusion',
   ],
   messages: {
     SITE_TITLE: '젠더 불쾌감 바이블',
-    SITE_DESCRIPTION: '자신의 젠더에 의문을 가지는 사람들, 젠더 여정을 이미 시작한 사람들, 그리고 단순히 트랜스젠더인 것이 어떤 것인지 배워보고 싶은 사람들을 위한 자료.',
+    SITE_DESCRIPTION: '자신의 젠더에 의문을 가지는 사람들, 젠더 여정을 이미 시작한 사람들, 그리고 단순히 트랜스젠더 당사자인 것이 어떤 것인지 배워보고 싶은 사람들을 위한 자료.',
 
     FOOTER_PATREON: '이 웹사이트는 공동체의 기여 덕분에 만들어질 수 있었습니다. 이 웹사이트가 귀중한 가치가 되었다면, <a>Patreon에서 후원</a>하거나 <b>Ko-fi를 통해 기부</b>하는 것을 고려해 보세요.',
     FOOTER_COPYRIGHT: '이 사이트 텍스트와 웹사이트 코드, 원본 그래픽은 <a>CC BY-NC-SA 라이선스를 사용합니다.</a>',

@@ -101,8 +101,16 @@ html[lang=de], html[lang=pl], html[lang=hu], html[lang=fr] {
 }
 
 html[lang=ko] {
-  --font-family-primary: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, 'Malgun Gothic', sans-serif;
-  --font-family-secondary: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, 'Malgun Gothic', sans-serif;
+  --font-family-primary: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, system-ui, 'Malgun Gothic', sans-serif;
+  --font-family-secondary: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, system-ui, 'Malgun Gothic', sans-serif;
+
+  h1, h2 {
+    font-weight: var(--font-weight-bold);
+  }
+
+  h3 {
+    font-weight: var(--font-weight-bold);
+  }
 }
 
 html[lang=zh-tw], html[lang=zh-cn] {
