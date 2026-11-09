@@ -37,7 +37,7 @@ export default {
     SITE_TITLE: 'The Gender Dysphoria Bible',
     SITE_DESCRIPTION: 'A resource for those questioning their gender, already on a gender journey, or simply wanting to learn more about what it is to be transgender.',
 
-    FOOTER_PATREON: 'This site is made possible thanks to contributions from the community. If you have found this site invaluable, please consider <a>making a pledge on patreon</a> or a <b>donation via Ko-fi</b>.',
+    FOOTER_PATREON: 'This site is made possible thanks to contributions from the community. If you have found this site useful, please consider <a>making a pledge on patreon</a> or a <b>donation via Ko-fi</b>.',
     FOOTER_COPYRIGHT: 'Site text, website code and original graphics are <a>licensed CC BY-NC-SA.</a>',
     FOOTER_COPYRIGHT2: 'Twipped Media and Other Contributors',
     FOOTER_PRIVACY_POLICY: 'Privacy Policy',
@@ -97,7 +97,7 @@ export default {
       title: 'W·PATH',
       description: [
         'World Professional Association for Transgender Health',
-        'A global health organization focused on understanding and treatment of gender incongruence and gender dysphoria, and creating standardized treatment for transgender and gender variant people.',
+        'A global health organization focused on understanding and treating gender incongruence and gender dysphoria, and creating standardized treatment for transgender and gender variant people.',
       ],
     },
     DSM: {
