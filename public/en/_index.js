@@ -37,7 +37,7 @@ export default {
     SITE_TITLE: 'The Gender Dysphoria Bible',
     SITE_DESCRIPTION: 'A resource for those questioning their gender, already on a gender journey, or simply wanting to learn more about what it is to be transgender.',
 
-    FOOTER_PATREON: 'This site is made possible thanks to contributions from the community. If you have found this site invaluable, please consider <a>making a pledge on patreon</a> or a <b>donation via Ko-fi</b>.',
+    FOOTER_PATREON: 'This site is made possible thanks to contributions from the community. If you have found this site useful, please consider <a>making a pledge on patreon</a> or a <b>donation via Ko-fi</b>.',
     FOOTER_COPYRIGHT: 'Site text, website code and original graphics are <a>licensed CC BY-NC-SA.</a>',
     FOOTER_COPYRIGHT2: 'Twipped Media and Other Contributors',
     FOOTER_PRIVACY_POLICY: 'Privacy Policy',
@@ -97,7 +97,7 @@ export default {
       title: 'W·PATH',
       description: [
         'World Professional Association for Transgender Health',
-        'A global health organization focused on understanding and treatment of gender incongruence and gender dysphoria, and creating standardized treatment for transgender and gender variant people.',
+        'A global health organization focused on understanding and treating gender incongruence and gender dysphoria, and creating standardized treatment for transgender and gender variant people.',
       ],
     },
     DSM: {
@@ -108,10 +108,10 @@ export default {
       aliases: [ 'kareotype' ],
     },
     transfeminine: {
-      description: 'A person medically transitioning from a testosterone based appearance to an estrogen based appearance.',
+      description: 'A person, binary or non-binary, who was assigned male at birth and has a predominantly feminine gender identity or presentation',
     },
     transmasculine: {
-      description: 'A person medically transitioning from an estrogen based feminine appearance to a testosterone based masculine appearance.',
+      description: 'A person, binary or non-binary, who was assigned female at birth and has a predominantly masculine gender identity or presentation.',
     },
     enby: {
       title: 'Enbies',
@@ -133,6 +133,13 @@ export default {
     },
     genotype: {
       description: 'The genetic structure of a particular organism or a group of organisms.',
+    },
+    pmos: {
+      description: [
+        'Polyendocrine metabolic ovarian syndrome (PMOS, formerly known as PCOS) is a hormone condition that can affect hair growth, periods, fertility and mood. There is no cure, but treatments and lifestyle changes can help.',
+        'More information: https://en.wikipedia.org/wiki/Polyendocrine_metabolic_ovarian_syndrome',
+      ],
+      aliases: [ 'pmos', 'pcos', 'polyendocrine metabolic ovarian syndrome' ],
     },
   },
 };
