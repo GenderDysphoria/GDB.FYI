@@ -134,5 +134,12 @@ export default {
     genotype: {
       description: 'The genetic structure of a particular organism or a group of organisms.',
     },
+    pmos: {
+      description: [
+        'Polyendocrine metabolic ovarian syndrome (PMOS, formerly known as PCOS) is a hormone condition that can affect hair growth, periods, fertility and mood. There is no cure, but treatments and lifestyle changes can help.',
+        'More information: https://en.wikipedia.org/wiki/Polyendocrine_metabolic_ovarian_syndrome',
+      ],
+      aliases: [ 'pmos', 'pcos', 'polyendocrine metabolic ovarian syndrome' ],
+    },
   },
 };
