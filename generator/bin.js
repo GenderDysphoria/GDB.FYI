@@ -7,6 +7,13 @@ import { register } from 'node:module';
 register(import.meta.resolve('./loader-mdx.js'));
 register(import.meta.resolve('import-essex'));
 
+// import { registerHooks } from 'node:module';
+// import * as ImportEssex from 'import-essex';
+// import * as ImportMDX from './loader-mdx.js';
+
+// registerHooks(ImportMDX);
+// registerHooks(ImportEssex);
+
 const {
   _: [ command, ...args ],
   ...flags
