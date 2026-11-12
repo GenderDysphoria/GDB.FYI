@@ -25,26 +25,38 @@ export default async function Image ({
 
   const full = files.pop();
 
-  const sizes = [];
-  const srcsets = [];
+  let img;
 
-  for (const { url, width } of files) {
-    sizes.push(`(max-width: ${width}px) ${width}px`);
-    srcsets.push(`${url} ${width}px`);
+  if (src.endsWith('.svg')) {
+    img = (
+      <img
+        src={full.url}
+        {...props}
+        className={classes}
+      />
+    );
+  } else {
+    const sizes = [];
+    const srcsets = [];
+
+    for (const { url, width } of files) {
+      sizes.push(`(max-width: ${width}px) ${width}px`);
+      srcsets.push(`${url} ${width}px`);
+    }
+    sizes.push(`${full.width}px`);
+    srcsets.push(`${full.url} ${full.width}px`);
+
+    img = (
+      <img
+        sizes={sizes}
+        srcSet={srcsets.join(', ')}
+        src={full.url}
+        loading={loading}
+        {...props}
+        className={classes}
+      />
+    );
   }
-  sizes.push(`${full.width}px`);
-  srcsets.push(`${full.url} ${full.width}px`);
-
-  const img = (
-    <img
-      sizes={titlecard ? sizes : 'auto'}
-      srcSet={srcsets.join(', ')}
-      src={full.url}
-      loading={loading}
-      {...props}
-      className={classes}
-    />
-  );
 
   if (href) {
     if (href === true) href = full.url;
