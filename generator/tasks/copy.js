@@ -11,6 +11,7 @@ export const INCLUDE_GLOB = [
   'public/fonts/**',
 ];
 export const EXCLUDE_GLOB = [];
+export const WATCH_GLOB = [ ...INCLUDE_GLOB, ...EXCLUDE_GLOB.map((s) => `!${s}`) ];
 
 export default async function copy (options) {
   const {
