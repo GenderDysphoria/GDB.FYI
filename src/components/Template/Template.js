@@ -11,7 +11,6 @@ import SvgIcon from '#src/components/SvgIcon';
 import Text from '#src/components/Text';
 
 import LightDark from './LightDark.js';
-import BetaAnnounce from '../Beta/Beta.js';
 import Breakpoint from '../Breakpoint/Breakpoint.js';
 
 const CssPrefix = 'ui-template';
@@ -53,7 +52,6 @@ export default function Template ({
           <Navigation />
         </div>
         <Article className={`${CssPrefix}-body`}>
-          <BetaAnnounce />
           <script type="application/json" id="glossary">
             <RawHtml>{JSON.stringify(this.lang.glossary)}</RawHtml>
           </script>
@@ -121,7 +119,8 @@ function Navigation () {
 function ExtLinks () {
   return (
     <div class="ext-links">
-      <Button className="link" color={null} target="_blank" rel="noreferrer" href="https://twipped.social/@gdb" title="Patreon"><SvgIcon icon="mastodon" role="img" aria-label="Mastodon" size="md" /></Button>
+      <Button className="link" color={null} target="_blank" rel="noreferrer" href="https://twipped.social/@gdb" title="Mastodon"><SvgIcon icon="mastodon" role="img" aria-label="Mastodon" size="md" /></Button>
+      <Button className="link" color={null} target="_blank" rel="noreferrer" href="https://bsky.app/profile/gdb.twipped.social.ap.brid.gy" title="BlueSky"><SvgIcon icon="bsky" role="img" aria-label="Mastodon" size="md" /></Button>
       <Button className="link" color={null} target="_blank" rel="noreferrer" href="https://github.com/GenderDysphoria/GDB.FYI" title="Github"><SvgIcon icon="github" role="img" aria-label="Github" size="md" /></Button>
       <Button className="link" color={null} target="_blank" rel="noreferrer" href="https://patreon.com/curvyandtrans" title="Patreon"><SvgIcon icon="patreon" role="img" aria-label="Patreon" size="md" /></Button>
       <Button className="link" color={null} target="_blank" rel="noreferrer" href="https://ko-fi.com/curvyandtrans" title="Ko-Fi"><SvgIcon icon="ko-fi" role="img" aria-label="Ko-fi" size="md" /></Button>
