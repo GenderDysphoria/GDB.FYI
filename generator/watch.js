@@ -4,6 +4,7 @@ import { spawn } from 'node:child_process';
 import path from 'path';
 
 import { ROOT_DIR } from './pkg.js';
+import { WATCH_GLOB as copyGlob } from './tasks/copy.js';
 import { WATCH_GLOB as cssGlob } from './tasks/css.js';
 import { WATCH_GLOB as pagesGlob } from './tasks/pages.js';
 import { serverWatchTask } from './tasks/server.js';
@@ -11,6 +12,7 @@ import { WATCH_GLOB as staticJsGlob } from './tasks/static-js.js';
 
 export default async function watch () {
   const disposeServer = await serverWatchTask();
+  const disposeCopyWatcher = makeWatcher(copyGlob, () => recopy());
   const disposeCssWatcher = makeWatcher(cssGlob, () => rebuildCss());
   const disposeJsWatcher = makeWatcher(staticJsGlob, () => rebuildJs());
   const disposePageWatcher = makeWatcher(pagesGlob, () => rebuildPages());
@@ -27,6 +29,7 @@ export default async function watch () {
       }
       halting = true;
       disposeServer();
+      disposeCopyWatcher();
       disposeCssWatcher();
       disposeJsWatcher();
       disposePageWatcher();
@@ -53,6 +56,10 @@ async function invokeTask (task) {
     gen.on('close', resolve);
   });
 }
+
+var recopy = pDebounce(async function rebuildCss () {
+  return invokeTask('copy');
+}, 250);
 
 var rebuildCss = pDebounce(async function rebuildCss () {
   return invokeTask('css');

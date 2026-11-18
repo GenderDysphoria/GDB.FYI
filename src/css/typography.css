@@ -5,7 +5,7 @@
     --html-font-size: 14px;
   }
 
-  --font-family-primary: "Lato",
+  --font-family-primary: "Inter",
     Arial,
     ui-sans-serif,
     system-ui,
@@ -88,21 +88,19 @@ html[dir="rtl"] {
 
 html[lang="ar"] {
   direction: rtl;
-  --font-family-primary: 'Amiri', Ariel, sans-serif;
+  --font-family-primary: 'IBM Plex Sans Arabic', Ariel, sans-serif;
   --font-family-secondary: 'Reem Kufi', 'Helvetica Neue', Helvetica, serif;
+  --font-family-brand: 'Reem Kufi', 'Helvetica Neue', Helvetica, serif;
 
   body {
     direction: rtl;
   }
 }
 
-html[lang=de], html[lang=pl], html[lang=hu], html[lang=fr] {
-  --font-family-secondary: 'Helvetica Neue', Helvetica, serif;
-}
-
 html[lang=ko] {
   --font-family-primary: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, system-ui, 'Malgun Gothic', sans-serif;
   --font-family-secondary: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, system-ui, 'Malgun Gothic', sans-serif;
+  --font-family-brand: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, system-ui, 'Malgun Gothic', sans-serif;
 
   h1, h2 {
     font-weight: var(--font-weight-bold);
@@ -114,6 +112,21 @@ html[lang=ko] {
 }
 
 html[lang=zh-tw], html[lang=zh-cn] {
-  --font-family-primary: "Noto Sans TC", "Noto Sans SC", "IBM Plex Sans JP", "Huninn", sans-serif;
-  --font-family-secondary: "Huninn", "Noto Sans TC", "Noto Sans SC", "IBM Plex Sans JP", sans-serif;
+  --font-family-primary: "Noto Sans TC", "Noto Sans SC", "IBM Plex Sans JP", sans-serif;
+  --font-family-secondary: "Noto Sans TC", "Noto Sans SC", "IBM Plex Sans JP", sans-serif;
+  --font-family-brand: "Noto Sans TC", "Noto Sans SC", "IBM Plex Sans JP", sans-serif;
+}
+
+
+html[lang=ja] {
+  --font-family-primary: "IBM Plex Sans JP", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-family-secondary: "Noto Sans JP", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-family-brand: "Noto Sans JP", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+
+html[lang=he] {
+  --font-family-primary: "IBM Plex Sans Hebrew", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-family-secondary: "Noto Sans Hebrew", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-family-brand: "Noto Sans Hebrew", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }

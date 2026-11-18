@@ -20,6 +20,21 @@ export default async function HtmlPage ({
     titlecard.href = new URL(titlecard.url, canonical).href;
     await Promise.all(promises);
   }
+
+  let fontset = 'latin';
+
+  if (lang === 'zh-cn' || lang === 'zh-tw') {
+    fontset = 'chinese';
+  } else if (lang === 'ar') {
+    fontset = 'arabic';
+  } else if (lang === 'ja') {
+    fontset = 'japanese';
+  } else if (lang === 'ko') {
+    fontset = 'korean';
+  } else if (lang === 'he') {
+    fontset = 'hebrew';
+  }
+
   return (
     <>
       <RawHtml>{'<!DOCTYPE html>'}</RawHtml>
@@ -82,29 +97,7 @@ export default async function HtmlPage ({
           <link rel="apple-touch-icon-precomposed" type="image/png" sizes="120x120" href="/favicon120.png" />
           <link rel="apple-touch-icon-precomposed" type="image/png" sizes="144x144" href="/favicon144.png" />
 
-          <link rel="preconnect" href="//fonts.gstatic.com/" crossorigin />
-          <link rel="preconnect" href="//fonts.googleapis.com" />
-          <link href="//fonts.googleapis.com/css?family=Sriracha:400" rel="stylesheet" />
-          <link href="//fonts.googleapis.com/css?family=Lato:100,200,300,400,700,800" rel="stylesheet" />
-          <link href="//fonts.googleapis.com/css?family=Roboto:300,400,600" rel="stylesheet" />
-          <link href="//fonts.googleapis.com/css?family=Gothic+A1:300,400,600" rel="stylesheet" />
-          {metadata.rtl && (
-            <>
-              <link href="//fonts.googleapis.com/css2?family=Amiri:wght@100;200;300;400;500;600;700" rel="stylesheet" />
-              <link href="//fonts.googleapis.com/css2?family=Reem+Kufi:wght@100;200;300;400;500;600;700" rel="stylesheet" />
-            </>
-          )}
-          {(lang === 'zh' || lang === 'tw') && (
-            <>
-              <link href="//fonts.googleapis.com/css2?family=Huninn:wght@400;700" rel="stylesheet" />
-              <link href="//fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&family=Noto+Sans+SC:wght@100..900&family=Noto+Serif+TC:wght@200..900" rel="stylesheet" />
-            </>
-          )}
-          {(lang === 'ko') && (
-            <>
-              <link href="//fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900" rel="stylesheet" />
-            </>
-          )}
+          <link rel="stylesheet" href={`/fonts/${fontset}.css`} type="text/css" />
           <link rel="stylesheet" href={`/static/${BUILD_HASH}/bundle.css`} type="text/css" />
           {head}
           <ScriptAsset src="i.js" data-i-url={IS_PROD ? 't.genderdysphoria.fyi/i' : '/i'} />
