@@ -75,8 +75,8 @@ h6 {
 h1 { font-size: var(--font-size-4xl); font-weight: var(--font-weight-light); }
 h2 { font-size: var(--font-size-3xl); font-weight: var(--font-weight-light); }
 h3 { font-size: var(--font-size-2xl); font-weight: var(--font-weight-regular); }
-h4 { font-size: var(--font-size-xl); font-weight: var(--font-weight-bold); }
-h5 { font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); }
+h4 { font-size: var(--font-size-xl); font-weight: var(--font-weight-medium); }
+h5 { font-size: var(--font-size-lg); font-weight: var(--font-weight-medium); }
 h6 { font-size: var(--font-size-md); font-weight: var(--font-weight-medium); }
 
 h1,

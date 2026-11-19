@@ -121,58 +121,39 @@
 }
 
 /* ============================================================================================================= */
-
-/* gothic-a1-100 - cyrillic_greek_latin */
+/* m-plus-1p-300 - cyrillic_greek_latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Gothic A1';
-  font-style: normal;
-  font-weight: 100;
-  src: url('/fonts/gothic-a1-v18-cyrillic_greek_latin-100.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('/fonts/gothic-a1-v18-cyrillic_greek_latin-100.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
-/* gothic-a1-300 - cyrillic_greek_latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Gothic A1';
+  font-family: 'M PLUS 1p';
   font-style: normal;
   font-weight: 300;
-  src: url('/fonts/gothic-a1-v18-cyrillic_greek_latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('/fonts/gothic-a1-v18-cyrillic_greek_latin-300.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src: url('/fonts/m-plus-1p-v33-cyrillic_greek_latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('/fonts/m-plus-1p-v33-cyrillic_greek_latin-300.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
-/* gothic-a1-regular - cyrillic_greek_latin */
+/* m-plus-1p-regular - cyrillic_greek_latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Gothic A1';
+  font-family: 'M PLUS 1p';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/gothic-a1-v18-cyrillic_greek_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('/fonts/gothic-a1-v18-cyrillic_greek_latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src: url('/fonts/m-plus-1p-v33-cyrillic_greek_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('/fonts/m-plus-1p-v33-cyrillic_greek_latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
-/* gothic-a1-500 - cyrillic_greek_latin */
+/* m-plus-1p-500 - cyrillic_greek_latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Gothic A1';
+  font-family: 'M PLUS 1p';
   font-style: normal;
   font-weight: 500;
-  src: url('/fonts/gothic-a1-v18-cyrillic_greek_latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('/fonts/gothic-a1-v18-cyrillic_greek_latin-500.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src: url('/fonts/m-plus-1p-v33-cyrillic_greek_latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('/fonts/m-plus-1p-v33-cyrillic_greek_latin-500.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
-/* gothic-a1-700 - cyrillic_greek_latin */
+/* m-plus-1p-700 - cyrillic_greek_latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Gothic A1';
+  font-family: 'M PLUS 1p';
   font-style: normal;
   font-weight: 700;
-  src: url('/fonts/gothic-a1-v18-cyrillic_greek_latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('/fonts/gothic-a1-v18-cyrillic_greek_latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
-/* gothic-a1-900 - cyrillic_greek_latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Gothic A1';
-  font-style: normal;
-  font-weight: 900;
-  src: url('/fonts/gothic-a1-v18-cyrillic_greek_latin-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('/fonts/gothic-a1-v18-cyrillic_greek_latin-900.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src: url('/fonts/m-plus-1p-v33-cyrillic_greek_latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('/fonts/m-plus-1p-v33-cyrillic_greek_latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }

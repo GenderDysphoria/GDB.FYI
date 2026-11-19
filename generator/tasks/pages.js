@@ -22,6 +22,7 @@ export const WATCH_GLOB = [
   ...PAGE_GLOB,
   INDEX_GLOB,
   COMPONENT_GLOB,
+  'public/archive/**/*.{mdx,js}',
   '!public/**/_*.mdx',
   '!public/static/**',
 ];
