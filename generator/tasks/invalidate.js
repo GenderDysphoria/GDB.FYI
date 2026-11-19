@@ -16,11 +16,18 @@ export default async function invalidateCloudfront ({ wait = false } = {}) {
   }
 
   const cloudfrontClient = new CloudFrontClient(credentials);
+  const distributions = Array.isArray(credentials.distributions) ? credentials.distributions : [ credentials.distributions ];
 
+  await Promise.all(distributions.map((DistributionId) => (
+    invalidate(cloudfrontClient, DistributionId, wait)
+  )));
+}
+
+async function invalidate (cloudfrontClient, DistributionId, wait = false) {
   var poll = async function poll (id) {
     const res = await cloudfrontClient.send(
       new GetInvalidationCommand({
-        DistributionId: credentials.distribution,
+        DistributionId,
         Id: id,
       })
     );
@@ -38,7 +45,7 @@ export default async function invalidateCloudfront ({ wait = false } = {}) {
 
   const invalidation = await cloudfrontClient.send(
     new CreateInvalidationCommand({
-      DistributionId: credentials.distribution,
+      DistributionId,
       InvalidationBatch: {
         CallerReference: Date.now().toString(),
         Paths: {
@@ -54,9 +61,9 @@ export default async function invalidateCloudfront ({ wait = false } = {}) {
     throw new Error("Created invalidation, but didn't define Invalidation");
   }
 
-  const id = invalidation.Invalidation.Id;
+  const invalidationId = invalidation.Invalidation.Id;
 
-  log('Invalidation created, waiting for it to complete.', id);
+  log('Invalidation created, waiting for it to complete.', invalidationId);
 
-  if (wait) await poll(id);
+  if (wait) await poll(invalidationId);
 }
