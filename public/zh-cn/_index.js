@@ -87,10 +87,10 @@ export default {
       aliases: [ 'kareotype' ],
     },
     transfeminine: {
-      description: 'A person medically transitioning from a testosterone based appearance to an estrogen based appearance.',
+      description: 'A person, binary or non-binary, who was assigned male at birth and has a predominantly feminine gender identity or presentation',
     },
     transmasculine: {
-      description: 'A person medically transitioning from an estrogen based feminine appearance to a testosterone based masculine appearance.',
+      description: 'A person, binary or non-binary, who was assigned female at birth and has a predominantly masculine gender identity or presentation.',
     },
     queer: {
       description: '性变态/酷儿。可泛指非顺性别非异性恋者。带有拒绝一切标签、反抗社会规范的意味。',
