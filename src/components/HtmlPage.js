@@ -100,11 +100,11 @@ export default async function HtmlPage ({
           <link rel="stylesheet" href={`/fonts/${fontset}.css`} type="text/css" />
           <link rel="stylesheet" href={`/static/${BUILD_HASH}/bundle.css`} type="text/css" />
           {head}
-          <ScriptAsset src="i.js" data-i-url={IS_PROD ? 't.genderdysphoria.fyi/i' : '/i'} />
+          <ScriptAsset src="i.js" data-i-url={IS_PROD ? 'https://t.genderdysphoria.fyi/i' : '/i'} />
         </head>
         <body className={className}>
           {children}
-          <noscript><img src={(IS_PROD ? 't.genderdysphoria.fyi/i' : '/i') +  '?stage=noscript'} style="display: none" /></noscript>
+          <noscript><img src={(IS_PROD ? 'https://t.genderdysphoria.fyi/i' : '/i') +  '?stage=noscript'} style="display: none" /></noscript>
         </body>
       </html>
     </>
