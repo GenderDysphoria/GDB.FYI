@@ -17,6 +17,12 @@ const tasks = {
   publish: [
     'clean',
     'build',
+    'deploy',
+    'cloudfront',
+  ],
+  'publish-pdf': [
+    'clean',
+    'build',
     'pdfs',
     'deploy',
     'cloudfront',
