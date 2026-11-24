@@ -8,7 +8,7 @@ export default async function HtmlPage ({
   lang = 'en',
   title,
   className,
-  canonical = 'https://gdb.fyi/',
+  canonical = 'https://genderdysphoria.fyi/',
   children,
   head,
 }) {

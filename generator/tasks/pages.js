@@ -27,7 +27,7 @@ export const WATCH_GLOB = [
   '!public/static/**',
 ];
 
-const CANONICAL_ROOT = 'https://v2.gdb.fyi/';
+const CANONICAL_ROOT = 'https://genderdysphoria.fyi/';
 
 const MINIFY_CONFIG = {
   conservativeCollapse: true,
