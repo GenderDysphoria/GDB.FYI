@@ -2,8 +2,8 @@ export default {
   lang: 'en',
 
   // these two should be updated any time a translation is made current
-  version: '2.0.0',
-  since: '2026-10-19',
+  version: '2.1.0',
+  since: '2026-11-25',
 
   name: 'English',
   menuName: 'English',
