@@ -7,11 +7,11 @@ The Gender Dysphoria Bible is a constant work in progress. As the understanding 
 
 ## Ways You Can Help
 
-- **Contributing new essay content.** There are so many topics related to the trans experience which are not yet documented on this site. [A project board of planned updates](https://github.com/orgs/GenderDysphoria/projects/2) and wanted content extensions is maintained on the GDB's GitHub organization page.
+- **Contributing new essay content.** There are so many topics related to the trans experience which are not yet documented on this site. [A project board of planned updates](https://github.com/orgs/GenderDysphoria/projects/4) and wanted content extensions is maintained on the GDB's GitHub organization page. If you see an area that you feel can be expanded, feel free to [submit content suggestions](https://github.com/GenderDysphoria/GDB.FYI/issues).
 
 - **Translating to other languages.** New translations are absolutely always welcomed, and existing translations are constantly in need of updates to keep them matching the english text.
 
-- **Copy editing / correction**. Typos and bad sentences make it past me constantly, so spotting them and letting 
+- **Copy editing / correction**. Typos and bad sentences make it past me constantly, so spotting them and letting me know helps immensely.
 
 - **Programming Code**. If you are of a coding nature, there are features I would love to implement on this site which I have yet to get around to. See the project board linked above. Instructions on how to get the site up and running are in the README file on the git repository.
 
