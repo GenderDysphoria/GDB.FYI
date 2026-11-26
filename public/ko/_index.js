@@ -2,8 +2,8 @@ export default {
   lang: 'ko',
 
   // these two should be updated any time a translation is made current
-  version: '2.0.0',
-  since: '2026-11-03',
+  version: '2.1.0',
+  since: '2026-11-25',
 
   name: '한국어 (KO)',
   menuName: '한국어 (Korean)',
@@ -127,6 +127,12 @@ export default {
         'Originally this term referred to a specific subset of second-wave feminists which saw transgender people as complicit in patriarchy and would drive them from feminist spaces. Today it serves as a prejorative shorthand for transphobic women who persecute trans people under the guise of feminist ideals.',
       ],
       aliases: [ 'terfs' ],
+    },
+    phenotype: {
+      description: 'The observable characteristics or traits of an organism that are produced by the interaction of the genotype and the environment.',
+    },
+    genotype: {
+      description: 'The genetic structure of a particular organism or a group of organisms.',
     },
   },
 };
