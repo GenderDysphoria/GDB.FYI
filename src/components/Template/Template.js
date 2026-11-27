@@ -23,6 +23,8 @@ export default function Template ({
   children,
   ...props
 }) {
+  const { lang } = this;
+
   const classes = clsx(
     className,
     CssPrefix
@@ -33,7 +35,7 @@ export default function Template ({
       <input type="checkbox" id={NAVCHECK_ID} className="hidden" aria-hidden="true" />
       <div className={`${CssPrefix}-topnav`}>
         <div className="container">
-          <Text component="h1" family="brand"><a href="/"><FormattedMessage id="SITE_TITLE" /></a></Text>
+          <Text component="h1" family="brand"><a href={`/${lang.lang}/`}><FormattedMessage id="SITE_TITLE" /></a></Text>
 
           <div class="spacer" />
           <ExtLinks />
