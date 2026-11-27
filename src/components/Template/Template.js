@@ -23,8 +23,7 @@ export default function Template ({
   children,
   ...props
 }) {
-  const { languages } = this;
-  const lang = languages[this.metadata.lang];
+  const { lang } = this;
 
   const classes = clsx(
     className,
